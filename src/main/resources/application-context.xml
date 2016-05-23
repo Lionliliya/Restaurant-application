@@ -17,6 +17,10 @@
               <property name="dataSource" ref="comboPooledDataSource"/>
        </bean>
 
+       <bean class="com.gmail.liliyayalovchenko.jdbc.EmployeeDAOImpl" id="employeeDAO">
+              <property name="dataSource" ref="comboPooledDataSource"/>
+       </bean>
+
        <bean class="com.gmail.liliyayalovchenko.jdbc.WarehouseDAOImpl" id="warehouseDAO">
               <property name="dataSource" ref="comboPooledDataSource"/>
        </bean>
@@ -29,6 +33,7 @@
        <bean class="com.gmail.liliyayalovchenko.controllers.WarehouseController" id="warehouseController">
               <property name="txManager" ref="txManager"/>
               <property name="warehouseDAO" ref="warehouseDAO"/>
+              <property name="ingredientDAO" ref="ingredientDAO"/>
        </bean>
 
        <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="txManager">

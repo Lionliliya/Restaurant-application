@@ -27,7 +27,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
             LOGGER.info("Successfully connected to DB");
             statement.setInt(1, ingredient.getId());
             statement.setInt(2, amount);
-            statement.executeQuery();
+            statement.executeUpdate();
             LOGGER.info("Ingredient added");
 
         } catch (SQLException e) {
@@ -45,7 +45,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
 
             LOGGER.info("Successfully connected to DB");
             statement.setString(1, ingredientName);
-            statement.executeQuery();
+            statement.executeUpdate();
             LOGGER.info("Ingredient deleted");
 
         } catch (SQLException e) {
@@ -66,7 +66,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
             LOGGER.info("Successfully connected to DB");
             statement.setInt(1, delta);
             statement.setInt(2, ingredient.getId());
-            statement.executeQuery();
+            statement.executeUpdate();
             LOGGER.info("Amount of ingredient updated");
 
         } catch (SQLException e) {
@@ -157,6 +157,30 @@ public class WarehouseDAOImpl implements WarehouseDAO {
             throw new RuntimeException(e);
         }
         return ingredientList;
+    }
+
+    @Override
+    public boolean alreadyExist(Ingredient ingredient) {
+        LOGGER.info("Connecting to database");
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement
+                    ("SELECT * FROM WAREHOUSE WHERE ingred_id = (SELECT id FROM INGREDIENT WHERE name = ?)")) {
+
+            LOGGER.info("Successfully connected to DB");
+            statement.setString(1, ingredient.getName());
+            ResultSet resultSet = statement.executeQuery();
+            LOGGER.info("ResultSet is got");
+            if(resultSet.next()) {
+                return true;
+            }  else {
+                LOGGER.info("Cannot find ingredient by this name");
+                return false;
+            }
+
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     public void setDataSource(DataSource dataSource) {

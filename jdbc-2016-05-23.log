@@ -6,3 +6,195 @@
 19:48:38.471 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
 19:48:38.476 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
 19:48:38.491 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Result set is got
+21:11:37.208 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:11:37.342 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:11:37.830 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1ptmyeiyxjkuk|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1ptmyeiyxjkuk|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:11:38.214 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:11:38.220 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:11:38.229 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Result set is got
+21:11:38.347 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:11:38.364 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:13:42.249 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:13:42.380 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:13:43.143 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1ptpmvg1y4wtl4|188715b5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1ptpmvg1y4wtl4|188715b5, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:13:43.613 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:13:43.616 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:13:43.628 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Result set is got
+21:16:57.279 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:16:57.468 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:16:58.210 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pttte010b3pjd|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pttte010b3pjd|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:16:58.652 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:16:58.657 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:16:58.673 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Result set is got
+21:16:58.807 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:16:58.833 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:16:58.834 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:18:56.959 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:18:57.096 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:18:57.876 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1ptwdpqfgwada|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1ptwdpqfgwada|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:18:58.366 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:18:58.371 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:18:58.386 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Result set is got
+21:18:58.520 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:18:58.536 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:18:58.537 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:18:58.541 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:18:58.541 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:18:58.550 [main] ERROR c.g.l.jdbc.WarehouseDAOImpl - Exception occurred while connecting to DB java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
+21:21:21.265 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:21:21.440 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:21:22.295 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1ptzh2j1rf37jm|188715b5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1ptzh2j1rf37jm|188715b5, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:21:22.731 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:21:22.737 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:21:22.751 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Result set is got
+21:21:22.854 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:21:22.871 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:21:22.872 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:21:22.875 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:21:22.876 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:21:22.922 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Amount of ingredient updated
+21:25:11.853 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:25:12.056 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:25:12.832 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pu4ezju08zg9|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pu4ezju08zg9|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:25:13.328 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:25:13.363 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:25:13.377 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:25:13.458 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:25:13.460 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:25:13.511 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Amount of ingredient updated
+21:25:13.514 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:25:13.514 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:25:13.515 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:26:09.607 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:26:09.744 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:26:10.485 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pu5njlrt54g8|188715b5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pu5njlrt54g8|188715b5, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:26:10.974 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:26:11.005 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:26:11.012 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:26:11.047 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:26:11.048 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:26:11.094 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Amount of ingredient updated
+21:26:11.097 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:26:11.098 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:26:11.100 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:26:11.103 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:26:11.104 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:26:11.138 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Ingredient deleted
+21:26:54.296 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:26:54.416 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:26:55.041 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pu6m0x4w0d7k|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pu6m0x4w0d7k|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:26:55.612 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:26:55.646 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:26:55.658 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:26:55.697 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:26:55.697 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:26:55.747 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Amount of ingredient updated
+21:26:55.749 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:26:55.750 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:26:55.750 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:26:55.751 [main] ERROR c.g.l.jdbc.WarehouseDAOImpl - Cannot find ingredient by this name
+21:27:35.545 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:27:35.695 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:27:36.496 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pu7hv93vc99y|188715b5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pu7hv93vc99y|188715b5, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:27:36.990 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:27:37.010 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:27:37.018 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:27:37.055 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:27:37.056 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:27:37.057 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:27:37.058 [main] ERROR c.g.l.jdbc.WarehouseDAOImpl - Cannot find ingredient by this name
+21:30:12.251 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:30:12.367 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:30:13.020 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1puaurj1euom6k|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1puaurj1euom6k|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:30:13.686 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:30:13.711 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:30:13.718 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:30:13.757 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:30:13.758 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:30:13.808 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Ingredient deleted
+21:32:13.698 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:32:13.853 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:32:14.489 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pudghl7z347s|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pudghl7z347s|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:32:14.981 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:32:15.001 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:32:15.009 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:32:15.013 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:32:15.013 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:32:15.013 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:32:15.016 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:32:15.016 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:32:15.019 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:32:15.042 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:32:15.043 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:32:15.060 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:32:15.061 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:32:15.062 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:32:15.063 [main] ERROR c.g.l.jdbc.WarehouseDAOImpl - Cannot find ingredient by this name
+21:32:15.063 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:32:15.064 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:32:15.111 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Ingredient added
+21:32:15.113 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:32:15.114 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:32:15.114 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:32:15.115 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:32:15.116 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:33:52.114 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:33:52.253 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:33:53.021 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pufkey1vxw7zq|188715b5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pufkey1vxw7zq|188715b5, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:33:53.505 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:33:53.525 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:33:53.537 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:33:53.559 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:33:53.560 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:33:53.577 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:33:53.577 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:33:53.578 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:33:53.579 [main] ERROR c.g.l.jdbc.WarehouseDAOImpl - Cannot find ingredient by this name
+21:33:53.579 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:33:53.580 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:33:53.630 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Ingredient added
+21:38:30.550 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:38:30.748 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:38:31.538 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pulj9vs46ude|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pulj9vs46ude|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:38:31.939 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:38:31.968 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:38:32.013 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Ingredient deleted
+21:38:32.041 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:38:32.041 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:38:32.052 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:38:32.055 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:38:32.056 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:38:32.057 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:38:32.057 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:38:32.058 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:38:32.059 [main] ERROR c.g.l.jdbc.WarehouseDAOImpl - Cannot find ingredient by this name
+21:38:32.059 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:38:32.060 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:38:32.103 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Ingredient added
+21:39:18.497 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:39:18.611 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:39:19.058 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1pumk93787qcd|5be49b60, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1pumk93787qcd|5be49b60, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:39:19.513 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:39:19.553 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:39:19.603 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Ingredient deleted
+21:39:19.639 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:39:19.639 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:39:19.651 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:39:32.100 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:39:32.106 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:39:32.108 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:39:32.109 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:39:32.111 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - ResultSet is got
+21:39:32.112 [main] ERROR c.g.l.jdbc.WarehouseDAOImpl - Cannot find ingredient by this name
+21:39:32.113 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:39:32.117 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:39:32.153 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Ingredient added
+21:44:35.536 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+21:44:35.665 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+21:44:36.406 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9g1putcvvkbry84|16ec5519, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9g1putcvvkbry84|16ec5519, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:44:36.847 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database
+21:44:36.869 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+21:44:36.877 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+21:44:36.914 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Connecting to database
+21:44:36.917 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Successfully connected to DB
+21:44:36.918 [main] INFO  c.g.l.jdbc.WarehouseDAOImpl - Result set is got

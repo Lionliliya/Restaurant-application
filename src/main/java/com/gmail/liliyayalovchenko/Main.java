@@ -2,6 +2,7 @@ package com.gmail.liliyayalovchenko;
 
 import com.gmail.liliyayalovchenko.controllers.IngredientController;
 import com.gmail.liliyayalovchenko.controllers.WarehouseController;
+import com.gmail.liliyayalovchenko.domains.Ingredient;
 import com.gmail.liliyayalovchenko.domains.Warehouse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,8 +26,23 @@ public class Main {
     private void start() {
        /* List<Ingredient> ingredientList = ingredientController.getAllIngredients();
         ingredientList.forEach(System.out::println);*/
-        List<Warehouse> warehouseList = warehouseController.getAllWarehouseIngred();
-        warehouseList.forEach(System.out::println);
+       // List<Warehouse> warehouseList = warehouseController.getAllWarehouseIngred();
+       // warehouseList.forEach(System.out::println);
+
+     //   Ingredient ingredient = ingredientController.getIngredientByName("rucolla");
+     //   System.out.println(ingredient.getId() + " rucolla");
+      //  warehouseController.changeAmount(ingredient, 20, true);
+      //  Warehouse warehouseIngred = warehouseController.findByName("chiken");
+      //  System.out.println(warehouseIngred);
+      //  warehouseController.removeIngredient("chiken");
+     // warehouseController.removeIngredient("bread");
+      //  Ingredient chiken = ingredientController.getIngredientByName("chiken");
+        Ingredient bread = ingredientController.getIngredientByName("bread");
+        System.out.println(bread);
+      //  warehouseController.addIngredient(chiken, 100);
+       // warehouseController.addIngredient(bread, 5);
+        List<Warehouse> warehouseList = warehouseController.getLuckIngredients();
+        for (Warehouse warehouse : warehouseList) System.out.println(warehouse);
 
 
     }

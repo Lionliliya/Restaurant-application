@@ -19,4 +19,5 @@ public interface WarehouseDAO {
 
     public List<Warehouse> getEndingIngredients();
 
+    public boolean alreadyExist(Ingredient ingredient);
 }

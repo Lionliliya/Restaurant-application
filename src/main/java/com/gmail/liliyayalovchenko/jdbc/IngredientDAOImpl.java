@@ -21,7 +21,7 @@ public class IngredientDAOImpl implements IngredientDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public Ingredient getIngredientById(int id) {
-        Ingredient ingredient = null;
+        Ingredient ingredient;
         LOGGER.info("Connecting to database");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM INGREDIENT WHERE id = ?")) {
@@ -31,7 +31,7 @@ public class IngredientDAOImpl implements IngredientDAO {
             ResultSet resultSet = statement.executeQuery();
             LOGGER.info("Result set is got");
             if (resultSet.next()) {
-               createIngredient(resultSet);
+               ingredient = createIngredient(resultSet);
             } else {
                 LOGGER.error("Cannot find ingredient bi this id");
                 throw new RuntimeException("Cannot find ingredient bi this id");
@@ -68,6 +68,65 @@ public class IngredientDAOImpl implements IngredientDAO {
         }
 
         return ingredientList;
+    }
+
+    @Override
+    public Ingredient getIngredientByName(String name) {
+        Ingredient ingredient;
+        LOGGER.info("Connecting to database");
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM INGREDIENT WHERE name = ?")) {
+
+            LOGGER.info("Successfully connected to DB");
+            statement.setString(1, name);
+            ResultSet resultSet = statement.executeQuery();
+            LOGGER.info("Result set is got");
+            if (resultSet.next()) {
+                ingredient = createIngredient(resultSet);
+            } else {
+                LOGGER.error("Cannot find ingredient bi this id");
+                throw new RuntimeException("Cannot find ingredient bi this id");
+            }
+
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
+        return ingredient;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.MANDATORY)
+    public boolean exist(Ingredient ingredient) {
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM INGREDIENT WHERE name = ?")) {
+
+            LOGGER.info("Successfully connected to DB");
+            statement.setString(1, ingredient.getName());
+            ResultSet resultSet = statement.executeQuery();
+            LOGGER.info("Result set is got");
+            return resultSet.next();
+
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.MANDATORY)
+    public void addIngredient(Ingredient ingredient) {
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement("INSERT INTO INGREDIENT (name) VALUE (?)")) {
+
+            LOGGER.info("Successfully connected to DB");
+            statement.setString(1, ingredient.getName());
+            statement.executeUpdate();
+            LOGGER.info("Ingredient added to DB");
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     private Ingredient createIngredient(ResultSet resultSet) throws SQLException {

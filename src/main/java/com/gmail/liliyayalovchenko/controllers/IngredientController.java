@@ -25,6 +25,12 @@ public class IngredientController {
         return ingredient;
     }
 
+    @Transactional
+    public Ingredient getIngredientByName(String name) {
+        Ingredient ingredient = ingredientDAO.getIngredientByName(name);
+        return ingredient;
+    }
+
     public void setTxManager(PlatformTransactionManager txManager) {
         this.txManager = txManager;
     }

@@ -22,7 +22,8 @@ public class WarehouseDAOImpl implements WarehouseDAO {
     public void addIngredient(Ingredient ingredient, int amount) {
         LOGGER.info("Connecting to database");
         try(Connection connection = dataSource.getConnection();
-            PreparedStatement statement = connection.prepareStatement("INSERT INTO WAREHOUSE (ingred_id, amount) values(?, ?)")) {
+            PreparedStatement statement = connection.prepareStatement
+                    ("INSERT INTO WAREHOUSE (ingred_id, amount) values(?, ?)")) {
 
             LOGGER.info("Successfully connected to DB");
             statement.setInt(1, ingredient.getId());

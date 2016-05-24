@@ -7,13 +7,13 @@ import java.util.List;
 
 public interface MenuDAO {
 
-    public void addNewMenu(Menu menu);
+    public void addNewMenu(String menuName, List<Dish> dishList);
 
     public void removeMenu(Menu menu);
 
     public Menu getMenuByName(String name);
 
-    public List<Menu> getAllMenus();
+    public void getAllMenus();
 
     public void addDishToMenu(Dish dish);
 

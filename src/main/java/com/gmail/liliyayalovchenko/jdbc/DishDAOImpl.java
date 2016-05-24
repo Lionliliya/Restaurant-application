@@ -125,6 +125,38 @@ public class DishDAOImpl implements DishDAO {
         return dishes;
     }
 
+    @Override
+    @Transactional(propagation = Propagation.MANDATORY)
+    public Dish getDishById(int dish_id) {
+        Dish dish;
+        LOGGER.info("Connecting to database. Method: getDishById(int dish_id)");
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement
+                     ("SELECT * FROM DISH WHERE id = ?")) {
+
+            LOGGER.info("Successfully connected to DB");
+            statement.setInt(1, dish_id);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                dish = createDish(resultSet);
+                LOGGER.info("Dish is got");
+            } else {
+                LOGGER.error("Cant get Dish by this id. Method: getDishByName(String dishName)");
+                throw new RuntimeException("Cant get Dish by this id. Method: getDishByName(String dishName)");
+            }
+
+            List<Ingredient> ingredients = getAllIngredientsByDishId(dish.getId());
+            dish.setIngredients(ingredients);
+            LOGGER.info("All ingredients successfully added to Dish");
+
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
+        return dish;
+    }
+
+    @Transactional(propagation = Propagation.MANDATORY)
     private Dish createDish(ResultSet resultSet) throws SQLException {
         Dish dish = new Dish();
         dish.setId(resultSet.getInt("id"));
@@ -136,6 +168,7 @@ public class DishDAOImpl implements DishDAO {
         return dish;
     }
 
+    @Transactional(propagation = Propagation.MANDATORY)
     private void addIngredientsToDish(int dishId, Ingredient ingredient) {
         LOGGER.info("Connecting to database. Method: addIngredientsToDish(int dishId, Ingredient ingredient)");
         try (Connection connection = dataSource.getConnection();
@@ -154,6 +187,7 @@ public class DishDAOImpl implements DishDAO {
         }
     }
 
+    @Transactional(propagation = Propagation.MANDATORY)
     private void deleteIngredientsOfDish(int dishId) {
         LOGGER.info("Connecting to database. Method: deleteIngredientsOfDish(int id, Ingredient ingredient)");
         try (Connection connection = dataSource.getConnection();
@@ -171,6 +205,7 @@ public class DishDAOImpl implements DishDAO {
         }
     }
 
+    @Transactional(propagation = Propagation.MANDATORY)
     private List<Ingredient> getAllIngredientsByDishId(int dishId) {
         List<Ingredient> ingredients = new ArrayList<>();
         LOGGER.info("Connecting to database. Method: getAllIngredientsByDishId(int dishId)");

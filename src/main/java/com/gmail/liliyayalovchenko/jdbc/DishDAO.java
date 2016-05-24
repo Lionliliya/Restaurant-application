@@ -13,4 +13,6 @@ public interface DishDAO {
     public Dish getDishByName(String dishName);
 
     public List<Dish> getAllDishes();
+
+    public Dish getDishById(int dish_id);
 }

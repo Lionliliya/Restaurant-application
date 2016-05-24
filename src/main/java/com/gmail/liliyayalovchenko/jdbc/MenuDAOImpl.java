@@ -8,6 +8,8 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MenuDAOImpl implements MenuDAO {
@@ -15,29 +17,108 @@ public class MenuDAOImpl implements MenuDAO {
     private static final Logger LOGGER = LoggerFactory.getLogger(MenuDAOImpl.class);
 
     private DataSource dataSource;
+    private DishDAO dishDAO;
 
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
-    public void addNewMenu(Menu menu) {
+    public void addNewMenu(String menuName, List<Dish> dishList) {
+        LOGGER.info("Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)");
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement
+                    ("INSERT INTO MENU (name) values(?)")) {
 
+            LOGGER.info("Successfully connected to DB");
+            statement.setString(1, menuName);
+            statement.executeUpdate();
+            LOGGER.info("Menu added");
+            for (Dish dish : dishList) {
+                addDishToMenu(getMenuByName(menuName).getId(), dish.getId());
+            }
+            LOGGER.info("All dishes added to MENU_DISH");
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void removeMenu(Menu menu) {
+        LOGGER.info("Connecting to database. Method: removeMenu(Menu menu))");
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement
+                    ("DELETE FROM MENU WHERE id = ?")) {
 
+            LOGGER.info("Successfully connected to DB");
+            int menuId = menu.getId();
+            deleteFromTableMenuDish(menuId);
+            LOGGER.info("All dishes are deleted from MENU_DISH");
+            statement.setInt(1, menuId);
+            statement.executeUpdate();
+            LOGGER.info("Menu deleted");
+
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
     }
+
 
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public Menu getMenuByName(String name) {
-        return null;
+        LOGGER.info("Connecting to database. Method: getMenuByName(String name)");
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement
+                    ("SELECT * FROM MENU INNER JOIN MENU_DISH on id = menu_id WHERE name = ?")) {
+
+            LOGGER.info("Successfully connected to DB");
+            statement.setString(1, name);
+            ResultSet resultSet = statement.executeQuery();
+            resultSet.next();
+            Menu menu = new Menu();
+            List<Dish> dishs = new ArrayList<>();
+            menu.setId(resultSet.getInt("id"));
+            menu.setName(resultSet.getString("name"));
+            Dish dish = dishDAO.getDishById(resultSet.getInt("dish_id"));
+            dishs.add(dish);
+            while (resultSet.next()) {
+                dish = dishDAO.getDishById(resultSet.getInt("dish_id"));
+                dishs.add(dish);
+            }
+            menu.setDishList(dishs);
+            LOGGER.info("Menu is got");
+            return menu;
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
-    public List<Menu> getAllMenus() {
-        return null;
+    public void getAllMenus() {
+        List<Menu> menus = new ArrayList<>();
+        LOGGER.info("Connecting to database. Method: getMenuByName(String name)");
+        try(Connection connection = dataSource.getConnection();
+            Statement statement = connection.createStatement()) {
+
+            LOGGER.info("Successfully connected to DB");
+            String sql = "SELECT * FROM MENU INNER JOIN MENU_DISH on id = menu_id";
+            ResultSet resultSet = statement.executeQuery(sql);
+            System.out.println("id  name   menu_id   dish_id");
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String menuName = resultSet.getString("name");
+                int menu_id = resultSet.getInt("menu_id");
+                int dish_d = resultSet.getInt("dish_id");
+                System.out.println(id + "  " + menuName + "   " + menu_id + "   " + dish_d);
+            }
+            LOGGER.info("Menu list is printed");
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -50,6 +131,44 @@ public class MenuDAOImpl implements MenuDAO {
     @Transactional(propagation = Propagation.MANDATORY)
     public void removeDishFromMenu(Dish dish) {
 
+    }
+
+    @Transactional(propagation = Propagation.MANDATORY)
+    private void addDishToMenu(int menuId, int dishId) {
+        LOGGER.info("Connecting to database.  Method: addDishToMenu(int menuId, int dishId)");
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement
+                    ("INSERT INTO MENU_DISH (menu_id, dish_id) VALUES(?, ?)")) {
+            LOGGER.info("Successfully connected to DB");
+            statement.setInt(1, menuId);
+            statement.setInt(2, dishId);
+            statement.executeUpdate();
+            LOGGER.info("Dish added to table Menu_Dish");
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Transactional(propagation = Propagation.MANDATORY)
+    private void deleteFromTableMenuDish(int menuId) {
+        LOGGER.info("Connecting to database. Method: deleteFromTableMenuDish(int menuId))");
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement
+                    ("DELETE FROM MENU_DISH WHERE id = ?")) {
+
+            LOGGER.info("Successfully connected to DB");
+            statement.setInt(1, menuId);
+            statement.executeUpdate();
+            LOGGER.info("Menu with id " + menuId + " deleted");
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void setDishDAO(DishDAO dishDAO) {
+        this.dishDAO = dishDAO;
     }
 
     public void setDataSource(DataSource dataSource) {

@@ -25,6 +25,23 @@
               <property name="dataSource" ref="comboPooledDataSource"/>
        </bean>
 
+       <bean class="com.gmail.liliyayalovchenko.jdbc.DishDAOImpl" id="dishDAO">
+              <property name="dataSource" ref="comboPooledDataSource"/>
+              <property name="ingredientDAO" ref="ingredientDAO"/>
+       </bean>
+
+       <bean class="com.gmail.liliyayalovchenko.jdbc.MenuDAOImpl" id="menuDAO">
+              <property name="dataSource" ref="comboPooledDataSource"/>
+       </bean>
+
+       <bean class="com.gmail.liliyayalovchenko.jdbc.OrderDAOImpl" id="orderDAO">
+              <property name="dataSource" ref="comboPooledDataSource"/>
+       </bean>
+
+       <bean class="com.gmail.liliyayalovchenko.jdbc.ReadyMealDAOImpl" id="readyMealDAO">
+              <property name="dataSource" ref="comboPooledDataSource"/>
+       </bean>
+
        <bean class="com.gmail.liliyayalovchenko.controllers.IngredientController" id="ingredientController">
               <property name="txManager" ref="txManager"/>
               <property name="ingredientDAO" ref="ingredientDAO"/>

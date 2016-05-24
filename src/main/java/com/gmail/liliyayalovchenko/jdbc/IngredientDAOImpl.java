@@ -15,7 +15,6 @@ public class IngredientDAOImpl implements IngredientDAO {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(IngredientDAOImpl.class);
 
-
     private DataSource dataSource;
 
     @Override

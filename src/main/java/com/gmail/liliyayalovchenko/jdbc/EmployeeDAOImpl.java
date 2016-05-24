@@ -81,8 +81,6 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         return employeeList;
     }
 
-
-
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public Employee findEmployeeByName(String firstName, String secondName) {

@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeDAOImpl implements EmployeeDAO {
@@ -19,7 +20,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void addEmployee(Employee employee) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: addEmployee(Employee employee)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement("INSERT INTO EMPLOYEE (second_name, first_name, empl_date, phone, position, salary) VALUES (?, ?, ?, ?, ?, ?)")) {
 
@@ -41,14 +42,13 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void removeEmployee(String firstName, String secondName) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: removeEmployee(String firstName, String secondName)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement("DELETE FROM EMPLOYEE WHERE first_name = ? AND second_name = ?")) {
 
             LOGGER.info("Successfully connected to DB");
             statement.setString(1, firstName);
             statement.setString(2, secondName);
-
             statement.executeUpdate();
             LOGGER.info("Employee is deleted");
         } catch (SQLException e) {
@@ -60,8 +60,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public List<Employee> getAllEmployees() {
-        List<Employee> employeeList = null;
-        LOGGER.info("Connecting to database");
+        List<Employee> employeeList = new ArrayList<>();
+        LOGGER.info("Connecting to database. Method: getAllEmployees()");
         try(Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement()) {
 

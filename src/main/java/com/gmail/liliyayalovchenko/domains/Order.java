@@ -9,13 +9,15 @@ public class Order {
     private int employeeId;
     private int tableNumber;
     private Date orderDate;
+    private String status;
     private List<Dish> dishList;
 
-    public Order(int orderNumber, int employeeId, int tableNumber, Date orderDate, List<Dish> dishList) {
+    public Order(int orderNumber, int employeeId, int tableNumber, Date orderDate, String status, List<Dish> dishList) {
         this.orderNumber = orderNumber;
         this.employeeId = employeeId;
         this.tableNumber = tableNumber;
         this.orderDate = orderDate;
+        this.status = status;
         this.dishList = dishList;
     }
 
@@ -69,6 +71,14 @@ public class Order {
         this.dishList = dishList;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
@@ -77,6 +87,7 @@ public class Order {
                 ", employeeId=" + employeeId +
                 ", tableNumber=" + tableNumber +
                 ", orderDate=" + orderDate +
+                ", status='" + status + '\'' +
                 ", dishList=" + dishList +
                 '}';
     }

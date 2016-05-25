@@ -22,7 +22,7 @@ public class DishDAOImpl implements DishDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void addDish(Dish dish) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: addDish(Dish dish)");
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement
                      ("INSERT INTO DISH (name, category, price, weigth) VALUES (?, ?, ?, ?)")) {
@@ -49,16 +49,14 @@ public class DishDAOImpl implements DishDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void removeDish(Dish dish) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: removeDish(Dish dish)");
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement
                      ("DELETE FROM DISH WHERE id = ?")) {
 
             LOGGER.info("Successfully connected to DB");
-
             deleteIngredientsOfDish(dish.getId());
             LOGGER.info("All ingredients successfully deleted");
-
             statement.setInt(1, dish.getId());
             statement.executeUpdate();
             LOGGER.info("Dish is deleted");
@@ -103,7 +101,7 @@ public class DishDAOImpl implements DishDAO {
     @Transactional(propagation = Propagation.MANDATORY)
     public List<Dish> getAllDishes() {
         List<Dish> dishes = new ArrayList<>();
-        LOGGER.info("Connecting to database. Method: getDishByName(String dishName)");
+        LOGGER.info("Connecting to database. Method: getAllDishes()");
         try (Connection connection = dataSource.getConnection();
              Statement statement = connection.createStatement()) {
 
@@ -141,8 +139,8 @@ public class DishDAOImpl implements DishDAO {
                 dish = createDish(resultSet);
                 LOGGER.info("Dish is got");
             } else {
-                LOGGER.error("Cant get Dish by this id. Method: getDishByName(String dishName)");
-                throw new RuntimeException("Cant get Dish by this id. Method: getDishByName(String dishName)");
+                LOGGER.error("Cant get Dish by this id. Method: getDishById(int dish_id)");
+                throw new RuntimeException("Cant get Dish by this id. Method: getDishById(int dish_id)");
             }
 
             List<Ingredient> ingredients = getAllIngredientsByDishId(dish.getId());
@@ -220,14 +218,11 @@ public class DishDAOImpl implements DishDAO {
                 Ingredient ingredient = ingredientDAO.getIngredientById(resultSet.getInt("ingred_id"));
                 ingredients.add(ingredient);
             }
-
             LOGGER.info("All ingredients successfully received");
-
         } catch (SQLException e) {
             LOGGER.error("Exception occurred while connecting to DB " + e);
             throw new RuntimeException(e);
         }
-
         return ingredients;
     }
 

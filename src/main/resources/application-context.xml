@@ -37,6 +37,7 @@
 
        <bean class="com.gmail.liliyayalovchenko.jdbc.OrderDAOImpl" id="orderDAO">
               <property name="dataSource" ref="comboPooledDataSource"/>
+              <property name="dishDAO" ref="dishDAO"/>
        </bean>
 
        <bean class="com.gmail.liliyayalovchenko.jdbc.ReadyMealDAOImpl" id="readyMealDAO">

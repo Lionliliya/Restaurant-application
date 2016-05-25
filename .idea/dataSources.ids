@@ -53,6 +53,7 @@
       <column name="employee_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="table_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="order_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="status" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="READY_MEALS" schema="" catalog="restaurant" type="TABLE">

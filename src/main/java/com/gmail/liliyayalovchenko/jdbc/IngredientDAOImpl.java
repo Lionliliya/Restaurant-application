@@ -21,7 +21,7 @@ public class IngredientDAOImpl implements IngredientDAO {
     @Transactional(propagation = Propagation.MANDATORY)
     public Ingredient getIngredientById(int id) {
         Ingredient ingredient;
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: getIngredientById(int id)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM INGREDIENT WHERE id = ?")) {
 
@@ -48,7 +48,7 @@ public class IngredientDAOImpl implements IngredientDAO {
     @Transactional(propagation = Propagation.MANDATORY)
     public List<Ingredient> getAllIngredients() {
         List<Ingredient> ingredientList = new ArrayList<>();
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: getAllIngredients()");
         try(Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement()) {
 
@@ -65,14 +65,13 @@ public class IngredientDAOImpl implements IngredientDAO {
             LOGGER.error("Exception occurred while connecting to DB " + e);
             throw new RuntimeException(e);
         }
-
         return ingredientList;
     }
 
     @Override
     public Ingredient getIngredientByName(String name) {
         Ingredient ingredient;
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: getIngredientByName(String name)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM INGREDIENT WHERE name = ?")) {
 
@@ -97,6 +96,7 @@ public class IngredientDAOImpl implements IngredientDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public boolean exist(Ingredient ingredient) {
+        LOGGER.info("Connecting to database. Method: exist(Ingredient ingredient)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM INGREDIENT WHERE name = ?")) {
 
@@ -115,6 +115,7 @@ public class IngredientDAOImpl implements IngredientDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void addIngredient(Ingredient ingredient) {
+        LOGGER.info("Connecting to database. Method: addIngredient(Ingredient ingredient)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement("INSERT INTO INGREDIENT (name) VALUE (?)")) {
 

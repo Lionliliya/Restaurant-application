@@ -9,13 +9,13 @@ public interface OrderDAO {
 
     public void createOrder(Order order);
 
-    public void addDishToOpenOrder(Dish dish);
+    public void addDishToOpenOrder(Dish dish, int orderNumber);
 
-    public void deleteOrder(Order order);
+    public void deleteOrder(int orderNumber);
 
-    public void changeOrderStatus(Order order);
+    public void changeOrderStatus(int orderNumber);
 
-    public List<Order> getOpenOrders();
+    public List<Order> getOpenOrClosedOrder(String orderStatus);
 
-    public List<Order> getClosedOrders();
+
 }

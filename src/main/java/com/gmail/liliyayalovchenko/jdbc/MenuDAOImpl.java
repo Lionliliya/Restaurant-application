@@ -32,7 +32,7 @@ public class MenuDAOImpl implements MenuDAO {
             statement.executeUpdate();
             LOGGER.info("Menu added");
             for (Dish dish : dishList) {
-                addDishToMenu(getMenuByName(menuName).getId(), dish.getId());
+                addDishToMenu(getMenuByName(menuName).getId(), dish);
             }
             LOGGER.info("All dishes added to MENU_DISH");
         } catch (SQLException e) {
@@ -97,9 +97,8 @@ public class MenuDAOImpl implements MenuDAO {
 
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
-    public void getAllMenus() {
-        List<Menu> menus = new ArrayList<>();
-        LOGGER.info("Connecting to database. Method: getMenuByName(String name)");
+    public void showAllMenus() {
+        LOGGER.info("Connecting to database. Method: showAllMenus()");
         try(Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement()) {
 
@@ -123,25 +122,34 @@ public class MenuDAOImpl implements MenuDAO {
 
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
-    public void addDishToMenu(Dish dish) {
+    public void removeDishFromMenu(int menuId, Dish dish) {
+        LOGGER.info("Connecting to database. Method: removeDishFromMenu(int menuId, Dish dish))");
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement statement = connection.prepareStatement
+                    ("DELETE FROM MENU_DISH WHERE id = ? AND dish_id = ?")) {
 
+            LOGGER.info("Successfully connected to DB");
+            statement.setInt(1, menuId);
+            int dishId = dish.getId();
+            statement.setInt(2, dishId);
+            statement.executeUpdate();
+            LOGGER.info("Dish with id " + dishId + " deleted");
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
-    public void removeDishFromMenu(Dish dish) {
-
-    }
-
-    @Transactional(propagation = Propagation.MANDATORY)
-    private void addDishToMenu(int menuId, int dishId) {
+    public void addDishToMenu(int menuId, Dish dish) {
         LOGGER.info("Connecting to database.  Method: addDishToMenu(int menuId, int dishId)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement
                     ("INSERT INTO MENU_DISH (menu_id, dish_id) VALUES(?, ?)")) {
             LOGGER.info("Successfully connected to DB");
             statement.setInt(1, menuId);
-            statement.setInt(2, dishId);
+            statement.setInt(2, dish.getId());
             statement.executeUpdate();
             LOGGER.info("Dish added to table Menu_Dish");
         } catch (SQLException e) {

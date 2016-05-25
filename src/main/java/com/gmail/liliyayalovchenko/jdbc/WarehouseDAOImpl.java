@@ -20,7 +20,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void addIngredient(Ingredient ingredient, int amount) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: addIngredient(Ingredient ingredient, int amount)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement
                     ("INSERT INTO WAREHOUSE (ingred_id, amount) values(?, ?)")) {
@@ -40,7 +40,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void removeIngredient(String ingredientName) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: removeIngredient(String ingredientName)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement("DELETE FROM WAREHOUSE WHERE ingred_id = (SELECT id FROM INGREDIENT WHERE name = ?)")) {
 
@@ -58,7 +58,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public void changeAmount(Ingredient ingredient, int delta, boolean increase) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: changeAmount(Ingredient ingredient, int delta, boolean increase)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = increase ? connection.prepareStatement
                     ("UPDATE WAREHOUSE SET amount=amount+? WHERE ingred_id = ?") : connection.prepareStatement
@@ -78,11 +78,12 @@ public class WarehouseDAOImpl implements WarehouseDAO {
 
     @Override
     public Warehouse findByName(String ingredientName) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method:  findByName(String ingredientName)");
         Warehouse ingredient;
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement
-                    ("SELECT * FROM WAREHOUSE WHERE ingred_id = (SELECT id FROM INGREDIENT WHERE name = ?)")) {
+                    ("SELECT * FROM WAREHOUSE WHERE ingred_id = " +
+                            "(SELECT id FROM INGREDIENT WHERE name = ?)")) {
 
             LOGGER.info("Successfully connected to DB");
             statement.setString(1, ingredientName);
@@ -102,20 +103,11 @@ public class WarehouseDAOImpl implements WarehouseDAO {
         return ingredient;
     }
 
-    private Warehouse createWarehouseIngred(ResultSet resultSet) throws SQLException {
-        Warehouse ingredient;
-        ingredient = new Warehouse();
-        ingredient.setId(resultSet.getInt("id"));
-        ingredient.setIngredId(resultSet.getInt("ingred_id"));
-        ingredient.setAmount(resultSet.getInt("amount"));
-        return ingredient;
-    }
-
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public List<Warehouse> getAllIngredients() {
         List<Warehouse> ingredientList = new ArrayList<>();
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: getAllIngredients()");
         try(Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement()) {
 
@@ -140,7 +132,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
     @Transactional(propagation = Propagation.MANDATORY)
     public List<Warehouse> getEndingIngredients() {
         List<Warehouse> ingredientList = new ArrayList<>();
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method: getEndingIngredients()");
         try(Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement()) {
 
@@ -161,8 +153,9 @@ public class WarehouseDAOImpl implements WarehouseDAO {
     }
 
     @Override
+    @Transactional(propagation = Propagation.MANDATORY)
     public boolean alreadyExist(Ingredient ingredient) {
-        LOGGER.info("Connecting to database");
+        LOGGER.info("Connecting to database. Method:  alreadyExist(Ingredient ingredient) ");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement
                     ("SELECT * FROM WAREHOUSE WHERE ingred_id = (SELECT id FROM INGREDIENT WHERE name = ?)")) {
@@ -183,6 +176,16 @@ public class WarehouseDAOImpl implements WarehouseDAO {
             throw new RuntimeException(e);
         }
     }
+
+    private Warehouse createWarehouseIngred(ResultSet resultSet) throws SQLException {
+        Warehouse ingredient;
+        ingredient = new Warehouse();
+        ingredient.setId(resultSet.getInt("id"));
+        ingredient.setIngredId(resultSet.getInt("ingred_id"));
+        ingredient.setAmount(resultSet.getInt("amount"));
+        return ingredient;
+    }
+
 
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;

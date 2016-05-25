@@ -55,6 +55,30 @@
               <property name="ingredientDAO" ref="ingredientDAO"/>
        </bean>
 
+       <bean class="com.gmail.liliyayalovchenko.controllers.DishController" id="dishController">
+              <property name="txManager" ref="txManager"/>
+              <property name="dishDAO" ref="dishDAO"/>
+       </bean>
+
+       <bean class="com.gmail.liliyayalovchenko.controllers.EmployeeController" id="employeeController">
+              <property name="txManager" ref="txManager"/>
+              <property name="employeeDAO" ref="employeeDAO"/>
+       </bean>
+
+       <bean class="com.gmail.liliyayalovchenko.controllers.MenuController" id="menuController">
+              <property name="txManager" ref="txManager"/>
+              <property name="menuDAO" ref="menuDAO"/>
+       </bean>
+
+       <bean class="com.gmail.liliyayalovchenko.controllers.OrderController" id="orderController">
+              <property name="txManager" ref="txManager"/>
+              <property name="orderDAO" ref="orderDAO"/>
+       </bean>
+
+       <bean class="com.gmail.liliyayalovchenko.controllers.ReadyMealController" id="readyMealController">
+              <property name="txManager" ref="txManager"/>
+              <property name="readyMealDAO" ref="readyMealDAO"/>
+       </bean>
        <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="txManager">
               <property name="dataSource" ref="comboPooledDataSource"/>
        </bean>

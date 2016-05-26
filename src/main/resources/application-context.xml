@@ -11,6 +11,10 @@
        <bean class="com.gmail.liliyayalovchenko.Main" id="main">
               <property name="ingredientController" ref="ingredientController"/>
               <property name="warehouseController" ref="warehouseController"/>
+              <property name="readyMealController" ref="readyMealController"/>
+              <property name="dishController" ref="dishController"/>
+              <property name="menuController" ref="menuController"/>
+              <property name="orderController" ref="orderController"/>
        </bean>
 
        <bean class="com.gmail.liliyayalovchenko.jdbc.IngredientDAOImpl" id="ingredientDAO">

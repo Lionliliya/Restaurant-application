@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d6d2198-50a8-4be7-a8d5-203aa892392d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/DishController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/EmployeeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/MenuController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/OrderController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/ReadyMealController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/DishController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/DishController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/EmployeeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/EmployeeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/application-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,47 +70,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WarehouseDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/WarehouseDAOImpl.java">
+      <file leaf-file-name="EmployeeDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
-              <caret line="107" column="47" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
-              <folding>
-                <element signature="method#addIngredient#0;class#WarehouseDAOImpl#0" expanded="false" />
-                <element signature="method#removeIngredient#0;class#WarehouseDAOImpl#0" expanded="false" />
-                <element signature="method#changeAmount#0;class#WarehouseDAOImpl#0" expanded="false" />
-                <element signature="method#findByName#0;class#WarehouseDAOImpl#0" expanded="false" />
-                <element signature="method#getAllIngredients#0;class#WarehouseDAOImpl#0" expanded="false" />
-                <element signature="method#getEndingIngredients#0;class#WarehouseDAOImpl#0" expanded="false" />
-                <element signature="method#alreadyExist#0;class#WarehouseDAOImpl#0" expanded="false" />
-                <element signature="method#createWarehouseIngred#0;class#WarehouseDAOImpl#0" expanded="false" />
-                <marker date="1464170060258" expanded="true" signature="1019:1073" placeholder="INSERT INTO ..." />
-                <marker date="1464170060258" expanded="true" signature="1846:1928" placeholder="DELETE FROM ..." />
-                <marker date="1464170060258" expanded="true" signature="1887:1927" placeholder="SELECT id FR..INGREDIENT..." />
-                <marker date="1464170060258" expanded="true" signature="2743:2799" placeholder="UPDATE WAREH..." />
-                <marker date="1464170060258" expanded="true" signature="2854:2910" placeholder="UPDATE WAREH..." />
-                <marker date="1464170060258" expanded="true" signature="3683:3800" placeholder="SELECT * FRO..WAREHOUSE..." />
-                <marker date="1464170060258" expanded="true" signature="3759:3799" placeholder="SELECT id FR..INGREDIENT..." />
-                <marker date="1464170060258" expanded="true" signature="4975:4998" placeholder="SELECT * FRO..WAREHOUSE..." />
-                <marker date="1464170060258" expanded="true" signature="5963:6004" placeholder="SELECT * FRO..WAREHOUSE..." />
-                <marker date="1464170060258" expanded="true" signature="6870:6954" placeholder="SELECT * FRO..WAREHOUSE..." />
-                <marker date="1464170060258" expanded="true" signature="6913:6953" placeholder="SELECT id FR..INGREDIENT..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DishController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/DishController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2038835" vertical-offset="0" max-vertical-offset="618">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="810">
+              <caret line="85" column="75" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
+                <element signature="method#addEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
+                <element signature="method#removeEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
+                <element signature="method#getAllEmployees#0;class#EmployeeDAOImpl#0" expanded="false" />
+                <element signature="method#findEmployeeByName#0;class#EmployeeDAOImpl#0" expanded="false" />
+                <element signature="method#createEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
+                <marker date="1464170060254" expanded="true" signature="904:1012" placeholder="INSERT INTO ..." />
+                <marker date="1464170060254" expanded="true" signature="2075:2136" placeholder="DELETE FROM ..." />
+                <marker date="1464170060254" expanded="true" signature="3014:3036" placeholder="SELECT * FRO..EMPLOYEE..." />
+                <marker date="1464170060254" expanded="true" signature="3956:4019" placeholder="SELECT * FRO..EMPLOYEE..." />
               </folding>
             </state>
           </provider>
@@ -122,13 +94,18 @@
       <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/EmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-              <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="864">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#824#825#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1110#1111#0" expanded="true" />
+                <element signature="e#1169#1170#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,88 +114,48 @@
       <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="268" max-vertical-offset="1062">
+            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="774">
               <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
-                <element signature="e#1330#1331#0" expanded="true" />
-                <element signature="e#1368#1369#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IngredientController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/IngredientController.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="666">
-              <caret line="12" column="49" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="49" />
+            <state vertical-scroll-proportion="-4.4446282" vertical-offset="4723" max-vertical-offset="5328">
+              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <folding>
+                <element signature="e#11149#11150#0" expanded="true" />
+                <element signature="e#11201#11202#0" expanded="true" />
+                <element signature="e#11269#11270#0" expanded="true" />
+                <element signature="e#11321#11322#0" expanded="true" />
+                <element signature="e#11392#11393#0" expanded="true" />
+                <element signature="e#11446#11447#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dish.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/domains/Dish.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java">
+      <file leaf-file-name="application-context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="882">
-              <caret line="144" column="52" selection-start-line="144" selection-start-column="4" selection-end-line="144" selection-end-column="52" />
-              <folding>
-                <element signature="method#addNewMenu#0;class#MenuDAOImpl#0" expanded="false" />
-                <element signature="method#removeMenu#0;class#MenuDAOImpl#0" expanded="false" />
-                <element signature="method#getMenuByName#0;class#MenuDAOImpl#0" expanded="false" />
-                <element signature="method#showAllMenus#0;class#MenuDAOImpl#0" expanded="false" />
-                <element signature="method#removeDishFromMenu#0;class#MenuDAOImpl#0" expanded="false" />
-                <element signature="method#addDishToMenu#0;class#MenuDAOImpl#0" expanded="false" />
-                <element signature="method#deleteFromTableMenuDish#0;class#MenuDAOImpl#0" expanded="false" />
-                <marker date="1464099921125" expanded="true" signature="1023:1056" placeholder="INSERT INTO ..." />
-                <marker date="1464099921125" expanded="true" signature="1943:1972" placeholder="DELETE FROM ..." />
-                <marker date="1464099921125" expanded="true" signature="2834:2904" placeholder="SELECT * FRO..MENU..." />
-                <marker date="1464099921125" expanded="true" signature="4212:4267" placeholder="SELECT * FRO..MENU..." />
-                <marker date="1464099921125" expanded="true" signature="5377:5427" placeholder="DELETE FROM ..." />
-                <marker date="1464099921125" expanded="true" signature="6262:6315" placeholder="INSERT INTO ..." />
-                <marker date="1464099921125" expanded="true" signature="7094:7128" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
-                <element signature="e#1317#1318#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1962">
+              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -238,42 +175,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application-context.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="1890">
-              <caret line="79" column="64" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="756">
+              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1185#1186#0" expanded="true" />
+                <element signature="e#1227#1228#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/OrderDAOImpl.java">
+      <file leaf-file-name="ReadyMealController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/ReadyMealController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
-              <caret line="128" column="63" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#createOrder#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#addDishToOpenOrder#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#deleteOrder#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#changeOrderStatus#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#getOpenOrClosedOrder#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#getAllDishOfOrder#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#deleteFromOrderDish#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#addDishIdToOrder#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#getOrderByOrderNum#0;class#OrderDAOImpl#0" expanded="false" />
-                <element signature="method#createOrder#1;class#OrderDAOImpl#0" expanded="false" />
-                <marker date="1464168449923" expanded="true" signature="972:1110" placeholder="INSERT INTO ..." />
-                <marker date="1464168449923" expanded="true" signature="2360:2415" placeholder="INSERT INTO ..." />
-                <marker date="1464168449923" expanded="true" signature="3452:3499" placeholder="DELETE FROM ..." />
-                <marker date="1464168449923" expanded="true" signature="4540:4597" placeholder="UPDATE ORDER..." />
-                <marker date="1464168449923" expanded="true" signature="5732:5778" placeholder="SELECT * FRO..ORDER_FROM_MENU..." />
-                <marker date="1464168449923" expanded="true" signature="6894:6943" placeholder="SELECT dish_..ORDER_DISH..." />
-                <marker date="1464168449923" expanded="true" signature="7926:7967" placeholder="DELETE FROM ..." />
-                <marker date="1464168449923" expanded="true" signature="8717:8772" placeholder="INSERT INTO ..." />
-                <marker date="1464168449923" expanded="true" signature="9592:9641" placeholder="SELECT * FRO..ORDER_FROM_MENU..." />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DishController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/DishController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="276" max-vertical-offset="954">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1106#1107#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -293,7 +247,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/WarehouseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/IngredientController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/IngredientDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAOImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/ReadyMealDAO.java" />
@@ -308,12 +261,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/IngredientDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/WarehouseDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/DishController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/EmployeeController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/ReadyMealController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/DishController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java" />
       </list>
     </option>
   </component>
@@ -474,7 +428,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jdbc" />
+              <option name="myItemId" value="domains" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -839,12 +793,12 @@
       <updated>1464021815308</updated>
       <workItem from="1464021817948" duration="3724000" />
       <workItem from="1464026907234" duration="5775000" />
-      <workItem from="1464076304430" duration="21008000" />
+      <workItem from="1464076304430" duration="27836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30507000" />
+    <option name="totallyTimeSpent" value="37335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
@@ -853,12 +807,12 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -868,7 +822,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980174" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -937,25 +891,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="396">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="594">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#addDish#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#removeDish#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#getDishByName#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#getAllDishes#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#getDishById#0;class#DishDAOImpl#0" expanded="false" />
             <element signature="method#createDish#0;class#DishDAOImpl#0" expanded="false" />
             <element signature="method#addIngredientsToDish#0;class#DishDAOImpl#0" expanded="false" />
             <element signature="method#deleteIngredientsOfDish#0;class#DishDAOImpl#0" expanded="false" />
-            <element signature="e#9809#9810#0" expanded="true" />
-            <element signature="e#9853#9854#0" expanded="true" />
             <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
             <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
             <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH..." />
@@ -1045,17 +994,17 @@
             <element signature="method#getEndingIngredients#0;class#WarehouseDAOImpl#0" expanded="false" />
             <element signature="method#alreadyExist#0;class#WarehouseDAOImpl#0" expanded="false" />
             <element signature="method#createWarehouseIngred#0;class#WarehouseDAOImpl#0" expanded="false" />
-            <marker date="1464170060258" expanded="true" signature="1019:1073" placeholder="INSERT INTO ..." />
-            <marker date="1464170060258" expanded="true" signature="1846:1928" placeholder="DELETE FROM ..." />
-            <marker date="1464170060258" expanded="true" signature="1887:1927" placeholder="SELECT id FR..INGREDIENT..." />
-            <marker date="1464170060258" expanded="true" signature="2743:2799" placeholder="UPDATE WAREH..." />
-            <marker date="1464170060258" expanded="true" signature="2854:2910" placeholder="UPDATE WAREH..." />
-            <marker date="1464170060258" expanded="true" signature="3683:3800" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="3759:3799" placeholder="SELECT id FR..INGREDIENT..." />
-            <marker date="1464170060258" expanded="true" signature="4975:4998" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="5963:6004" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="6870:6954" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="6913:6953" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="UPDATE WAREH..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="UPDATE WAREH..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
           </folding>
         </state>
       </provider>
@@ -1083,13 +1032,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
           <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
           <folding>
-            <element signature="e#4258#4280#0" expanded="false" />
-            <element signature="e#4328#4341#0" expanded="false" />
-            <element signature="e#4386#4400#0" expanded="false" />
-            <element signature="e#4449#4467#0" expanded="false" />
-            <element signature="e#4519#4544#0" expanded="false" />
-            <element signature="e#4596#4621#0" expanded="false" />
-            <element signature="e#4678#4704#0" expanded="false" />
+            <element signature="e#4546#4568#0" expanded="false" />
+            <element signature="e#4616#4629#0" expanded="false" />
+            <element signature="e#4674#4688#0" expanded="false" />
+            <element signature="e#4737#4755#0" expanded="false" />
+            <element signature="e#4807#4832#0" expanded="false" />
+            <element signature="e#4884#4909#0" expanded="false" />
+            <element signature="e#4966#4992#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1107,17 +1056,17 @@
             <element signature="method#getEndingIngredients#0;class#WarehouseDAOImpl#0" expanded="false" />
             <element signature="method#alreadyExist#0;class#WarehouseDAOImpl#0" expanded="false" />
             <element signature="method#createWarehouseIngred#0;class#WarehouseDAOImpl#0" expanded="false" />
-            <marker date="1464170060258" expanded="true" signature="1019:1073" placeholder="INSERT INTO ..." />
-            <marker date="1464170060258" expanded="true" signature="1846:1928" placeholder="DELETE FROM ..." />
-            <marker date="1464170060258" expanded="true" signature="1887:1927" placeholder="SELECT id FR..INGREDIENT..." />
-            <marker date="1464170060258" expanded="true" signature="2743:2799" placeholder="UPDATE WAREH..." />
-            <marker date="1464170060258" expanded="true" signature="2854:2910" placeholder="UPDATE WAREH..." />
-            <marker date="1464170060258" expanded="true" signature="3683:3800" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="3759:3799" placeholder="SELECT id FR..INGREDIENT..." />
-            <marker date="1464170060258" expanded="true" signature="4975:4998" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="5963:6004" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="6870:6954" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="6913:6953" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="UPDATE WAREH..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="UPDATE WAREH..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
           </folding>
         </state>
       </provider>
@@ -1134,6 +1083,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,18 +1179,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52396697" vertical-offset="313" max-vertical-offset="972">
-          <caret line="44" column="80" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1342,48 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2995" max-vertical-offset="3600">
-          <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createDish#0;class#DishDAOImpl#0" expanded="false" />
-            <element signature="method#addIngredientsToDish#0;class#DishDAOImpl#0" expanded="false" />
-            <element signature="method#deleteIngredientsOfDish#0;class#DishDAOImpl#0" expanded="false" />
-            <element signature="e#9809#9810#0" expanded="true" />
-            <element signature="e#9853#9854#0" expanded="true" />
-            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH..." />
-            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH..." />
-            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH..." />
-            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH_INGTREDIENTS..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="810">
-          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
-            <element signature="method#removeEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
-            <element signature="method#getAllEmployees#0;class#EmployeeDAOImpl#0" expanded="false" />
-            <element signature="method#findEmployeeByName#0;class#EmployeeDAOImpl#0" expanded="false" />
-            <element signature="method#createEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
-            <marker date="1464170060254" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1464170060254" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1464170060254" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..EMPLOYEE..." />
-            <marker date="1464170060254" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..EMPLOYEE..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/IngredientDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="702">
@@ -1417,26 +1318,18 @@
             <element signature="method#getEndingIngredients#0;class#WarehouseDAOImpl#0" expanded="false" />
             <element signature="method#alreadyExist#0;class#WarehouseDAOImpl#0" expanded="false" />
             <element signature="method#createWarehouseIngred#0;class#WarehouseDAOImpl#0" expanded="false" />
-            <marker date="1464170060258" expanded="true" signature="1019:1073" placeholder="INSERT INTO ..." />
-            <marker date="1464170060258" expanded="true" signature="1846:1928" placeholder="DELETE FROM ..." />
-            <marker date="1464170060258" expanded="true" signature="1887:1927" placeholder="SELECT id FR..INGREDIENT..." />
-            <marker date="1464170060258" expanded="true" signature="2743:2799" placeholder="UPDATE WAREH..." />
-            <marker date="1464170060258" expanded="true" signature="2854:2910" placeholder="UPDATE WAREH..." />
-            <marker date="1464170060258" expanded="true" signature="3683:3800" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="3759:3799" placeholder="SELECT id FR..INGREDIENT..." />
-            <marker date="1464170060258" expanded="true" signature="4975:4998" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="5963:6004" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="6870:6954" placeholder="SELECT * FRO..WAREHOUSE..." />
-            <marker date="1464170060258" expanded="true" signature="6913:6953" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="UPDATE WAREH..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="UPDATE WAREH..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..WAREHOUSE..." />
+            <marker date="1464170060258" expanded="true" signature="-1:-1" placeholder="SELECT id FR..INGREDIENT..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="1890">
-          <caret line="79" column="64" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1450,37 +1343,6 @@
             <marker date="1464170060266" expanded="true" signature="-1:-1" placeholder="(SELECT * FR..." />
             <marker date="1464170060266" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..READY_MEALS..." />
             <marker date="1464170060266" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/ReadyMealController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6796116" vertical-offset="12" max-vertical-offset="684">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/WarehouseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <element signature="method#getAllWarehouseIngred#0;class#WarehouseController#0" expanded="false" />
-            <element signature="method#addIngredient#0;class#WarehouseController#0" expanded="false" />
-            <element signature="method#changeAmount#0;class#WarehouseController#0" expanded="false" />
-            <element signature="method#getLuckIngredients#0;class#WarehouseController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1501,46 +1363,56 @@
             <element signature="method#addDishIdToOrder#0;class#OrderDAOImpl#0" expanded="false" />
             <element signature="method#getOrderByOrderNum#0;class#OrderDAOImpl#0" expanded="false" />
             <element signature="method#createOrder#1;class#OrderDAOImpl#0" expanded="false" />
-            <marker date="1464168449923" expanded="true" signature="972:1110" placeholder="INSERT INTO ..." />
-            <marker date="1464168449923" expanded="true" signature="2360:2415" placeholder="INSERT INTO ..." />
-            <marker date="1464168449923" expanded="true" signature="3452:3499" placeholder="DELETE FROM ..." />
-            <marker date="1464168449923" expanded="true" signature="4540:4597" placeholder="UPDATE ORDER..." />
-            <marker date="1464168449923" expanded="true" signature="5732:5778" placeholder="SELECT * FRO..ORDER_FROM_MENU..." />
-            <marker date="1464168449923" expanded="true" signature="6894:6943" placeholder="SELECT dish_..ORDER_DISH..." />
-            <marker date="1464168449923" expanded="true" signature="7926:7967" placeholder="DELETE FROM ..." />
-            <marker date="1464168449923" expanded="true" signature="8717:8772" placeholder="INSERT INTO ..." />
-            <marker date="1464168449923" expanded="true" signature="9592:9641" placeholder="SELECT * FRO..ORDER_FROM_MENU..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="UPDATE ORDER..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ORDER_FROM_MENU..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="SELECT dish_..ORDER_DISH..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464168449923" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ORDER_FROM_MENU..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1008">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.7123967" vertical-offset="271" max-vertical-offset="1494">
+          <caret line="127" column="40" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="method#addDish#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#removeDish#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#getDishByName#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#getAllDishes#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#getDishById#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#createDish#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#addIngredientsToDish#0;class#DishDAOImpl#0" expanded="false" />
+            <element signature="method#deleteIngredientsOfDish#0;class#DishDAOImpl#0" expanded="false" />
+            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH..." />
+            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH..." />
+            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH..." />
+            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464170060250" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DISH_INGTREDIENTS..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/IngredientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09917355" vertical-offset="48" max-vertical-offset="666">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1386">
+        <state vertical-scroll-proportion="0.553719" vertical-offset="277" max-vertical-offset="882">
           <caret line="144" column="52" selection-start-line="144" selection-start-column="4" selection-end-line="144" selection-end-column="52" />
           <folding>
             <element signature="method#addNewMenu#0;class#MenuDAOImpl#0" expanded="false" />
@@ -1550,74 +1422,156 @@
             <element signature="method#removeDishFromMenu#0;class#MenuDAOImpl#0" expanded="false" />
             <element signature="method#addDishToMenu#0;class#MenuDAOImpl#0" expanded="false" />
             <element signature="method#deleteFromTableMenuDish#0;class#MenuDAOImpl#0" expanded="false" />
-            <marker date="1464099921125" expanded="true" signature="1023:1056" placeholder="INSERT INTO ..." />
-            <marker date="1464099921125" expanded="true" signature="1943:1972" placeholder="DELETE FROM ..." />
-            <marker date="1464099921125" expanded="true" signature="2834:2904" placeholder="SELECT * FRO..MENU..." />
-            <marker date="1464099921125" expanded="true" signature="4212:4267" placeholder="SELECT * FRO..MENU..." />
-            <marker date="1464099921125" expanded="true" signature="5377:5427" placeholder="DELETE FROM ..." />
-            <marker date="1464099921125" expanded="true" signature="6262:6315" placeholder="INSERT INTO ..." />
-            <marker date="1464099921125" expanded="true" signature="7094:7128" placeholder="DELETE FROM ..." />
+            <marker date="1464099921125" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464099921125" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464099921125" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MENU..." />
+            <marker date="1464099921125" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MENU..." />
+            <marker date="1464099921125" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1464099921125" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1464099921125" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/MenuController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="268" max-vertical-offset="1062">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="810">
+          <caret line="85" column="75" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/IngredientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="666">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
+            <element signature="method#addEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
+            <element signature="method#removeEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
+            <element signature="method#getAllEmployees#0;class#EmployeeDAOImpl#0" expanded="false" />
+            <element signature="method#findEmployeeByName#0;class#EmployeeDAOImpl#0" expanded="false" />
+            <element signature="method#createEmployee#0;class#EmployeeDAOImpl#0" expanded="false" />
+            <marker date="1464170060254" expanded="true" signature="904:1012" placeholder="INSERT INTO ..." />
+            <marker date="1464170060254" expanded="true" signature="2075:2136" placeholder="DELETE FROM ..." />
+            <marker date="1464170060254" expanded="true" signature="3014:3036" placeholder="SELECT * FRO..EMPLOYEE..." />
+            <marker date="1464170060254" expanded="true" signature="3956:4019" placeholder="SELECT * FRO..EMPLOYEE..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/DishController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2038835" vertical-offset="0" max-vertical-offset="618">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/EmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="864">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="756">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="774">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/ReadyMealController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/WarehouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="702">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="method#getAllWarehouseIngred#0;class#WarehouseController#0" expanded="false" />
+            <element signature="method#addIngredient#0;class#WarehouseController#0" expanded="false" />
+            <element signature="method#changeAmount#0;class#WarehouseController#0" expanded="false" />
+            <element signature="method#getLuckIngredients#0;class#WarehouseController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1962">
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/domains/Dish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4446282" vertical-offset="4723" max-vertical-offset="5328">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <element signature="e#11149#11150#0" expanded="true" />
+            <element signature="e#11201#11202#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11321#11322#0" expanded="true" />
+            <element signature="e#11392#11393#0" expanded="true" />
+            <element signature="e#11446#11447#0" expanded="true" />
           </folding>
         </state>
       </provider>

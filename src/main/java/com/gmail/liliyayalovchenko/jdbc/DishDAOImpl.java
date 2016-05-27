@@ -25,7 +25,7 @@ public class DishDAOImpl implements DishDAO {
         LOGGER.info("Connecting to database. Method: addDish(Dish dish)");
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement
-                     ("INSERT INTO DISH (name, category, price, weigth) VALUES (?, ?, ?, ?)")) {
+                     ("INSERT INTO DISH (name, category, price, weight) VALUES (?, ?, ?, ?)")) {
 
             LOGGER.info("Successfully connected to DB");
             statement.setString(1, dish.getName());
@@ -82,8 +82,8 @@ public class DishDAOImpl implements DishDAO {
                 dish = createDish(resultSet);
                 LOGGER.info("Dish is got");
             } else {
-                LOGGER.error("Cant get Dish by this id. Method: getDishByName(String dishName)");
-                throw new RuntimeException("Cant get Dish by this id. Method: getDishByName(String dishName)");
+                LOGGER.error("Cant get Dish by this name. Method: getDishByName(String dishName)");
+                throw new RuntimeException("Cant get Dish by this name. Method: getDishByName(String dishName)");
             }
 
             List<Ingredient> ingredients = getAllIngredientsByDishId(dish.getId());
@@ -115,6 +115,7 @@ public class DishDAOImpl implements DishDAO {
                 LOGGER.info("Dish is got id: " + id);
                 dish.setIngredients(getAllIngredientsByDishId(id));
                 LOGGER.info("All ingredients successfully added to Dish id " + id);
+                dishes.add(dish);
             }
         } catch (SQLException e) {
             LOGGER.error("Exception occurred while connecting to DB " + e);
@@ -152,6 +153,32 @@ public class DishDAOImpl implements DishDAO {
             throw new RuntimeException(e);
         }
         return dish;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.MANDATORY)
+    public List<Dish> getDishByMenuId(int menuId) {
+        List<Dish> dishList = new ArrayList<>();
+        LOGGER.info("Connecting to database. getDishByMenuId(int menuId)");
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement
+                     ("SELECT * FROM MENU_DISH WHERE menu_id = ?")) {
+
+            LOGGER.info("Successfully connected to DB");
+            statement.setInt(1, menuId);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                Dish dish = getDishById(resultSet.getInt("dish_id"));
+
+                LOGGER.info("Dish is got");
+                dishList.add(dish);
+            }
+
+        } catch (SQLException e) {
+            LOGGER.error("Exception occurred while connecting to DB " + e);
+            throw new RuntimeException(e);
+        }
+        return dishList;
     }
 
     @Transactional(propagation = Propagation.MANDATORY)

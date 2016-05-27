@@ -24,8 +24,8 @@ public class WarehouseController {
     public void addIngredient(Ingredient ingredient, int amount){
        if (!ingredientDAO.exist(ingredient)) {
            ingredientDAO.addIngredient(ingredient);
-       }
-       if (!warehouseDAO.alreadyExist(ingredient)) {
+           System.out.println("Ingredient was added to Ingredients. Now you can put int to warehouse");
+       } else if (!warehouseDAO.alreadyExist(ingredient)) {
            warehouseDAO.addIngredient(ingredient, amount);
        } else {
            System.out.println("Ingredient already exist");

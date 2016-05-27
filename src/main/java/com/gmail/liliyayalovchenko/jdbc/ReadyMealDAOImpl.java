@@ -60,7 +60,7 @@ public class ReadyMealDAOImpl implements ReadyMealDAO {
             statement.setInt(2, meal.getDishId());
             statement.setInt(3, meal.getEmployeeId());
             statement.setInt(4, meal.getOrderId());
-            statement.setDate(5, (Date) meal.getMealDate());
+            statement.setDate(5, new Date(meal.getMealDate().getTime()));
             statement.executeUpdate();
             LOGGER.info("Ready Meal added");
 

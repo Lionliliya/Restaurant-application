@@ -15,4 +15,6 @@ public interface DishDAO {
     public List<Dish> getAllDishes();
 
     public Dish getDishById(int dish_id);
+
+    public List<Dish> getDishByMenuId(int menuId);
 }

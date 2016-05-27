@@ -15,6 +15,7 @@
               <property name="dishController" ref="dishController"/>
               <property name="menuController" ref="menuController"/>
               <property name="orderController" ref="orderController"/>
+              <property name="employeeController" ref="employeeController"/>
        </bean>
 
        <bean class="com.gmail.liliyayalovchenko.jdbc.IngredientDAOImpl" id="ingredientDAO">

@@ -33,7 +33,7 @@ public class OrderDAOImpl implements OrderDAO {
             statement.setInt(1, order.getOrderNumber());
             statement.setInt(2, order.getEmployeeId());
             statement.setInt(3, order.getTableNumber());
-            statement.setDate(4, (Date) order.getOrderDate());
+            statement.setDate(4, new Date(order.getOrderDate().getTime()));
             statement.setString(5, "opened");
             statement.executeUpdate();
             LOGGER.info("Order added");

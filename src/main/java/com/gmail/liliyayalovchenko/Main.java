@@ -1,15 +1,16 @@
 package com.gmail.liliyayalovchenko;
 
 import com.gmail.liliyayalovchenko.controllers.*;
-import com.gmail.liliyayalovchenko.domains.Dish;
-import com.gmail.liliyayalovchenko.domains.Ingredient;
-import com.gmail.liliyayalovchenko.domains.Warehouse;
+import com.gmail.liliyayalovchenko.domains.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,6 +23,8 @@ public class Main {
     private MenuController menuController;
     private OrderController orderController;
     private ReadyMealController readyMealController;
+    private EmployeeController employeeController;
+    private boolean noError;
 
 
     public static void main(String[] args) {
@@ -31,248 +34,696 @@ public class Main {
     }
 
     private void start() {
-        startAplication();
+        startApplication();
         Scanner sc = new Scanner(System.in);
         String selection = null;
-
-        while (true) {
+        noError = true;
+        while (!"q".equals(selection) && noError) {
 
             selection = sc.next();
 
             if (selection.equals("d")) {
-                System.out.println("Dish page. You have following options:");
-                System.out.println("Add new dish - enter d01\nRemove dish - enter d02\n" +
-                        "Get dish by name - enter d03\nGet all dishes - enter d04");
-                System.out.println("To exit database - enter q");
-                System.out.println("To start menu - enter 'start'");
-                selection = sc.next();
-                if (workWithDishTable(selection)) break;
+               goToDishPage(sc, selection);
 
             } else if (selection.equals("e")) {
-                System.out.println("Employee page. You have following options:");
-                System.out.println("Add new employee - enter e01\nRemove employee - enter e02\n" +
-                        "Get all employees - enter e03\nFind employee by name - enter e04");
-                System.out.println("To exit database - enter q");
-                System.out.println("To start menu - enter 'start'");
-                selection = sc.next();
-                if (workWithEmployeeTable(selection)) break;
+                goToEmployeePage(sc, selection);
+
 
             } else if (selection.equals("m")) {
-                System.out.println("Menu page. You have following options:");
-                System.out.println("Add new menu - enter m01\nRemove menu - enter m02\n" +
-                        "Get menu by name - enter m03\nTo see all menus - enter m04\n" +
-                        "To remove dish from menu - enter m05\nTo add dish to menu - enter m06");
-                System.out.println("To exit database - enter q");
-                System.out.println("To start menu - enter 'start'");
-                selection = sc.next();
-                if (workWithMenuTable(selection)) break;
+                goToMenuPage(sc, selection);
 
             } else if (selection.equals("o")) {
-                System.out.println("Orders page. You have following options:");
-                System.out.println("Create order - enter o01\nAdd dish to open order - enter o02\n" +
-                        "Delete order - enter o03\nTo change order status - enter o04\n" +
-                        "To get all open or closed orders - enter o05");
-                System.out.println("To exit database - enter q");
-                System.out.println("To start menu - enter 'start'");
-                selection = sc.next();
-                if (workWithOrderTable(selection)) break;
+                goToOrdersPage(sc, selection);
 
             } else if (selection.equals("rm")) {
-                System.out.println("Ready meals page. You have following options:");
-                System.out.println("Get all ready meals - enter rm01\nAdd new ready meal - enter rm02");
-                System.out.println("To exit database - enter q");
-                System.out.println("To start menu - enter 'start'");
-                selection = sc.next();
-                if (workWithReadyMealTable(selection)) break;
+                goToReadyMealPage(sc, selection);
 
             } else if (selection.equals("w")) {
-                System.out.println("Warehouse page. You have following options:");
-                System.out.println("Add ingredient to warehouse - enter w01\nRemove ingredient - enter w02\n" +
-                        "Change amount of ingredient - enter w03\nFind ingredient by name - enter w04\n " +
-                        "To see ingredients in lack - enter w05");
-                System.out.println("To exit database - enter q");
-                System.out.println("To start menu - enter 'start'");
-                selection = sc.next();
-                if (workWithWarehouseTable(selection)) break;
+                goToWarehousePage(sc, selection);
 
+            } else if ("q".equals(selection)) {
+                System.out.println("Good Bay!");
+                LOGGER.info("User left the application");
+                break;
             } else {
                 System.out.println("Wrong input!!! Try again");
             }
+
+            if (whatToDoNext(sc, selection)) break;
         }
-
-
-       /* List<Ingredient> ingredientList = ingredientController.getAllIngredients();
-        ingredientList.forEach(System.out::println);*/
-       // List<Warehouse> warehouseList = warehouseController.getAllWarehouseIngred();
-       // warehouseList.forEach(System.out::println);
-
-     //   Ingredient ingredient = ingredientController.getIngredientByName("rucolla");
-     //   System.out.println(ingredient.getId() + " rucolla");
-      //  warehouseController.changeAmount(ingredient, 20, true);
-      //  Warehouse warehouseIngred = warehouseController.findByName("chiken");
-      //  System.out.println(warehouseIngred);
-      //  warehouseController.removeIngredient("chiken");
-     // warehouseController.removeIngredient("bread");
-      //  Ingredient chiken = ingredientController.getIngredientByName("chiken");
-        Ingredient bread = ingredientController.getIngredientByName("bread");
-        System.out.println(bread);
-      //  warehouseController.addIngredient(chiken, 100);
-       // warehouseController.addIngredient(bread, 5);
-        List<Warehouse> warehouseList = warehouseController.getLuckIngredients();
-        for (Warehouse warehouse : warehouseList) System.out.println(warehouse);
-
-
     }
 
-    private boolean workWithWarehouseTable(String selection) {
-        if ("w01".equals(selection)) {
+    private void goToDishPage(Scanner sc, String selection) {
+        System.out.println("Dish page. You have following options:");
+        System.out.println("Add new dish - enter d01\nRemove dish - enter d02\n" +
+                "Get dish by name - enter d03\nGet all dishes - enter d04");
+        System.out.println("To exit database - enter q");
+        System.out.println("To start menu - enter 'start'");
 
-        } else if ("w02".equals(selection)) {
+        while (!"q".equals(selection)) {
+            selection = sc.next();
+            if (selection.equals("d01")) {
+                addNewDish(sc);
 
-        } else if ("w03".equals(selection)) {
+            } else if (selection.equals("d02")) {
+                deleteDish(sc);
 
-        } else if ("w04".equals(selection)) {
+            } else if (selection.equals("d03")) {
+                getDishByName(sc);
 
-        } else if ("w05".equals(selection)) {
+            } else if (selection.equals("d04")) {
+                getAllDishes();
 
-        } else if ("start".equals(selection)) {
-            start();
-        } else {
-            System.out.println("Good Bay!");
-            return true;
+            } else if (selection.equals("start")) {
+                start();
+
+            } else {
+                noError = false;
+
+            }
+            if (whatToDoNext(sc, selection)) break;
         }
-        return false;
+
+    }
+    /**
+     * Starts private methods for dish page **/
+    private void getAllDishes() {
+        try {
+            List<Dish> dishList = dishController.getAllDishes();
+            dishList.forEach(System.out::println);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot get all dishes " + ex);
+        }
     }
 
-    private boolean workWithReadyMealTable(String selection) {
-        if ("rm01".equals(selection)) {
-
-        } else if ("rm02".equals(selection)) {
-
-        } else if ("start".equals(selection)) {
-            start();
-        } else {
-            System.out.println("Good Bay!");
-            return true;
+    private void getDishByName(Scanner sc) {
+        System.out.println("Enter dish name");
+        String name = sc.next();
+        Dish dish;
+        try{
+            dish = dishController.getDishByName(name);
+            System.out.println(dish);
+        } catch (RuntimeException e) {
+            LOGGER.error("Cant get dish by this name");
+            System.out.println("dish with such name does not exist");
         }
-        return false;
     }
 
-    private boolean workWithOrderTable(String selection) {
-        if ("o01".equals(selection)) {
-
-        } else if ("o02".equals(selection)) {
-
-        } else if ("o03".equals(selection)) {
-
-        } else if ("o04".equals(selection)) {
-
-        } else if ("o05".equals(selection)) {
-
-        } else if ("start".equals(selection)) {
-            start();
-        } else {
-            System.out.println("Good Bay!");
-            return true;
+    private void deleteDish(Scanner sc) {
+        System.out.println("Enter dish name to delete");
+        String name = sc.next();
+        Dish dish;
+        try{
+            dish = dishController.getDishByName(name);
+            dishController.removeDish(dish);
+        } catch (RuntimeException e) {
+            LOGGER.error("Cannot get dish bi this name.");
+            System.out.println("dish with such name does not exist");
         }
-        return false;
     }
 
-    private boolean workWithMenuTable(String selection) {
-        if ("m01".equals(selection)) {
-
-        } else if ("m02".equals(selection)) {
-
-        } else if ("m03".equals(selection)) {
-
-        } else if ("m04".equals(selection)) {
-
-        } else if ("m05".equals(selection)) {
-
-        } else if ("m06".equals(selection)) {
-
-        } else if ("start".equals(selection)) {
-            start();
-        } else {
-            System.out.println("Good Bay!");
-            return true;
+    private void addNewDish(Scanner sc) {
+        Dish dish = new Dish();
+        System.out.println("Enter dish name");
+        String name = sc.next();
+        dish.setName(name);
+        System.out.println("Enter category");
+        String category = sc.next();
+        dish.setCategory(category);
+        System.out.println("Enter price");
+        dish.setPrice(sc.nextDouble());
+        System.out.println("Enter weight");
+        dish.setWeight(sc.nextInt());
+        System.out.println("Enter ingredients. Then enter - f");
+        List<Ingredient> ingredientList = new ArrayList<>();
+        try {
+            while (true) {
+                String ingre = sc.next();
+                if (ingre.equals("f")) break;
+                Ingredient ingredientByName = ingredientController.getIngredientByName(ingre);
+                ingredientList.add(ingredientByName);
+            }
+            dish.setIngredients(ingredientList);
+            dishController.addDish(dish);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot add dish " + ex);
         }
-        return false;
+    }
+    /**
+     * Stop private methods for dish page**/
+
+    private void goToEmployeePage(Scanner sc, String selection) {
+        System.out.println("Employee page. You have following options:");
+        System.out.println("Add new employee - enter e01\nRemove employee - enter e02\n" +
+                "Get all employees - enter e03\nFind employee by name - enter e04");
+        System.out.println("To exit database - enter q");
+        System.out.println("To start menu - enter 'start'");
+
+        while (!"q".equals(selection)) {
+            selection = sc.next();
+            if (selection.equals("e01")) {
+                addNewEmployee(sc);
+
+            } else if (selection.equals("e02")) {
+                removeEmployee(sc);
+
+            } else if (selection.equals("e03")) {
+               getAllEmployees();
+
+            } else if (selection.equals("e04")) {
+                findEmployeeByName(sc);
+
+            } else if (selection.equals("start")) {
+                start();
+
+            } else {
+                System.out.println("Good Bay!");
+                noError = false;
+                break;
+            }
+            whatToDoNext(sc, selection);
+        }
     }
 
-    private boolean workWithEmployeeTable(String selection) {
-        if ("e01".equals(selection)) {
+    /**
+     * Start private methods for employee page**/
+    private void findEmployeeByName(Scanner sc) {
+        System.out.println("Enter second name of employee");
+        String secondName = sc.next();
+        System.out.println("Enter first name of employee");
+        String firstName = sc.next();
 
-        } else if ("e02".equals(selection)) {
-
-        } else if ("e03".equals(selection)) {
-
-        } else if ("e04".equals(selection)) {
-
-        } else if ("start".equals(selection)) {
-            start();
-        } else {
-            System.out.println("Good Bay!");
-            return true;
+        Employee employee;
+        try {
+            employee = employeeController.findEmployeeByName(firstName, secondName);
+            System.out.println(employee);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Exception " + ex);
+            System.out.println("Can't find employee by this name");
         }
-        return false;
     }
 
-    private boolean workWithDishTable(String selection) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            if ("d01".equals(selection)) {              // add new dish
-                Dish dish = new Dish();
-                System.out.println("Enter dish name");
-                String name = scanner.next();
-                dish.setName(name);
-                System.out.println("Enter category");
-                dish.setCategory(scanner.next());
-                System.out.println("Enter price");
-                dish.setPrice(scanner.nextDouble());
-                System.out.println("Enter weight");
-                dish.setPrice(scanner.nextInt());
-                System.out.println("Enter ingredients. Then enter - f");
-                List<Ingredient> ingredientList = new ArrayList<>();
-                String ingre = null;
-                while (!"f".equals(ingre)) {
-                    ingre = scanner.next();
-                    ingredientList.add(ingredientController.getIngredientByName(ingre));
-                }
-                dish.setIngredients(ingredientList);
-                dishController.addDish(dish);
+    private void getAllEmployees() {
+        try {
+            List<Employee> employeeList = employeeController.getAllEmployees();
+            employeeList.forEach(System.out::println);
+        } catch (RuntimeException e) {
+            LOGGER.error("Cannot get all employee " +e);
+        }
+    }
 
-            } else if ("d02".equals(selection)) {
+    private void removeEmployee(Scanner sc) {
+        System.out.println("Enter second name of employee to delete");
+        String secondName = sc.next();
+        System.out.println("Enter first name of employee");
+        String firstName = sc.next();
+        try {
+            employeeController.removeEmployee(firstName, secondName);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot remove employee by this name");
+        }
+    }
 
-            } else if ("d03".equals(selection)) {
+    private void addNewEmployee(Scanner sc) {
+        Employee employee = new Employee();
+        System.out.println("Enter Second name of new employee");
+        employee.setSecondName(sc.next());
+        System.out.println("Enter First name of new employee");
+        employee.setFirstName(sc.next());
+        System.out.println("Enter date of employment in format yyyy-mm-dd. For example, 2008-10-3");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd");
+        Date date;
+        try {
+            date = format.parse(sc.next());
+            employee.setEmplDate(date);
+            System.out.println("Enter phone");
+            employee.setPhone(sc.next());
+            System.out.println("Enter position");
+            employee.setPosition(sc.next());
+            System.out.println("Enter salary");
+            employee.setSalary(sc.nextInt());
+            employeeController.addEmployee(employee);
+        } catch (ParseException e) {
+            LOGGER.error("Exception while parsing date" + e);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot add employee " + ex);
+        }
+    }
+    /**
+     * Stop private methods for employee page**/
 
-            } else if ("d04".equals(selection)) {
+    private void goToMenuPage(Scanner sc, String selection) {
+        System.out.println("Menu page. You have following options:");
+        System.out.println("Add new menu - enter m01\nRemove menu - enter m02\n" +
+                "Get menu by name - enter m03\nTo see all menus - enter m04\n" +
+                "To remove dish from menu - enter m05\nTo add dish to menu - enter m06");
+        System.out.println("To exit database - enter q");
+        System.out.println("To start menu - enter 'start'");
+
+        while (!"q".equals(selection)) {
+            selection = sc.next();
+            if ("m01".equals(selection)) {
+                addNewMenue(sc);
+
+            } else if ("m02".equals(selection)) {
+                removeMenu(sc);
+
+            } else if ("m03".equals(selection)) {
+                getMenuByName(sc);
+
+            } else if ("m04".equals(selection)) {
+                showAllMenues();
+
+            } else if ("m05".equals(selection)) {
+                removeDishFromMenu(sc);
+
+            } else if ("m06".equals(selection)) {
+                addDishToMenu(sc);
 
             } else if ("start".equals(selection)) {
                 start();
             } else {
                 System.out.println("Good Bay!");
-                scanner.close();
-                return true;
+                noError = false;
+                break;
             }
-        } catch (Exception e) {
-            System.out.println("Error");
-            System.out.println(e);
-            return false;
+            whatToDoNext(sc, selection);
         }
-        return false;
+
     }
 
-    private void startAplication() {
+    /**
+     * Start private methods for menu page**/
+    private void addNewMenue(Scanner sc) {
+        System.out.println("Enter name of new Menu");
+        String nameMenu = sc.next();
+        System.out.println("Enter dish name to add to menu. To finish enter - 'f'");
+        List<Dish> dishList = new ArrayList<>();
+        String dishName;
+        while (true) {
+            dishName = sc.next();
+            if (dishName.equals("f")) break;
+            try {
+                Dish dish = dishController.getDishByName(dishName);
+                dishList.add(dish);
+                menuController.addNewMenu(nameMenu, dishList);
+            } catch (RuntimeException e) {
+                LOGGER.error("Exception " + e);
+            }
+        }
+    }
+
+    private void removeMenu(Scanner sc) {
+        System.out.println("Enter name of menu to delete");
+        try {
+            Menu menu = menuController.getMenuByName(sc.next());
+            menuController.removeMenu(menu);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot get menu by this name " +ex);
+        }
+    }
+
+    private void getMenuByName(Scanner sc) {
+        System.out.println("Enter name of menu to see");
+        try {
+            Menu menu = menuController.getMenuByName(sc.next());
+            System.out.println(menu);
+        } catch (RuntimeException ex) {
+            LOGGER.error("cannot get menu by this name " + ex);
+        }
+    }
+
+    private void showAllMenues() {
+        try {
+            menuController.showAllMenus();
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot show list of menus " + ex);
+        }
+    }
+
+    private void removeDishFromMenu(Scanner sc) {
+        System.out.println("Enter menu name you want to remove dish");
+        try {
+            Menu menu = menuController.getMenuByName(sc.next());
+            System.out.println("Enter dish name to remove");
+            Dish dish = dishController.getDishByName(sc.next());
+            menuController.removeDishFromMenu(menu.getId(), dish);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Error while removing dish from menu Main() method " +ex);
+        }
+    }
+
+    private void addDishToMenu(Scanner sc) {
+        System.out.println("Enter menu name you want to add dish");
+        Menu menu = menuController.getMenuByName(sc.next());
+        System.out.println("Enter dish name to add");
+        Dish dish;
+        try {
+            dish = dishController.getDishByName(sc.next());
+            menuController.addDishToMenu(menu.getId(), dish);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot gat dish by this name " + ex);
+        }
+    }
+    /**
+     * Stop private methods for menu page**/
+
+     private void goToOrdersPage(Scanner sc, String selection) {
+        System.out.println("Orders page. You have following options:");
+        System.out.println("Create order - enter o01\nAdd dish to open order - enter o02\n" +
+                "Delete order - enter o03\nTo change order status - enter o04\n" +
+                "To get all open or closed orders - enter o05");
+        System.out.println("To exit database - enter q");
+        System.out.println("To start menu - enter 'start'");
+        while (!"q".equals(selection)) {
+            selection = sc.next();
+            if ("o01".equals(selection)) {
+                createOrder(sc);
+
+            } else if ("o02".equals(selection)) {
+                addDishToOpenOrder(sc);
+
+            } else if ("o03".equals(selection)) {
+               deleteOrder(sc);
+
+            } else if ("o04".equals(selection)) {
+               changeOrderStatus(sc);
+
+            } else if ("o05".equals(selection)) {
+               getAllOpenOrClosedOrders(sc);
+
+            } else if ("start".equals(selection)) {
+                start();
+            } else {
+                System.out.println("Good Bay!");
+                noError = false;
+                break;
+            }
+            whatToDoNext(sc, selection);
+        }
+    }
+    /**
+     * Start private methods for Order page**/
+    private void addDishToOpenOrder(Scanner sc) {
+        System.out.println("Enter dish name");
+        Dish dish;
+        try {
+            dish = dishController.getDishByName(sc.next());
+            System.out.println("Select number of order");
+
+            for (Order order : orderController.getOpenOrClosedOrder("opened")) {
+                System.out.println("Order number " + order.getOrderNumber() + " ");
+            }
+
+            orderController.addDishToOpenOrder(dish, sc.nextInt());
+        } catch (RuntimeException ex) {
+            LOGGER.error("Error wile add dish to open order." + ex);
+        }
+    }
+
+    private void createOrder(Scanner sc) {
+        Order order = new Order();
+        order.setOrderNumber(1004);
+        System.out.println("Enter employee second name");
+        String secondName = sc.next();
+        System.out.println("Enter employee firstName");
+        String firstName = sc.next();
+        Employee employee;
+        try {
+            employee = employeeController.findEmployeeByName(firstName, secondName);
+            order.setEmployeeId(employee.getId());
+            System.out.println("Enter table number");
+            order.setTableNumber(sc.nextInt());
+            order.setOrderDate(new Date());
+            order.setStatus("opened");
+
+            for (Dish dish : dishController.getAllDishes()) {
+                System.out.println("Dish " + dish.getName());
+            }
+            System.out.println("Enter name of dish to add to order, to stop - enter twice 'f'");
+            List<Dish> dishForOrder = new ArrayList<>();
+            String next1;
+            String next2;
+            while (true) {
+                next1 = sc.next();
+                next2 = sc.next();
+                if ("f".equals(next1)) break;
+                String dishName= next1 + " " + next2;
+                System.out.println("You entered " + dishName);
+                dishForOrder.add(dishController.getDishByName(dishName));
+            }
+            order.setDishList(dishForOrder);
+            orderController.createOrder(order);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Exception " + ex);
+            System.out.println("Cannot find employee or dish with such name");
+        }
+    }
+
+    private void getAllOpenOrClosedOrders(Scanner sc) {
+        System.out.println("Select order status to find, print: 'closed' or 'opened'");
+        List<Order> orders;
+        try {
+            orders = orderController.getOpenOrClosedOrder(sc.next());
+            orders.forEach(System.out::println);
+
+        } catch (RuntimeException e) {
+            LOGGER.error("No orders with such status!");
+        }
+    }
+
+    private void changeOrderStatus(Scanner sc) {
+        System.out.println("Enter number of order to change status to 'closed'");
+        for (Order order : orderController.getOpenOrClosedOrder("opened")) {
+            System.out.print(order.getOrderNumber() + " ");
+        }
+        try {
+            orderController.changeOrderStatus(sc.nextInt());
+        } catch (RuntimeException e) {
+            LOGGER.error("Cannot find order by this order number");
+        }
+    }
+
+    private void deleteOrder(Scanner sc) {
+        System.out.println("Enter number of order to delete");
+        for (Order order : orderController.getOpenOrClosedOrder("opened")) {
+            System.out.println("order " + order.getOrderNumber() + " ");
+        }
+        try {
+            orderController.deleteOrder(sc.nextInt());
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot find order by this order number " + ex);
+        }
+    }
+    /**
+     * End of private methods for Order page**/
+
+    private void goToReadyMealPage(Scanner sc, String selection) {
+        System.out.println("Ready meals page. You have following options:");
+        System.out.println("Get all ready meals - enter rm01\nAdd new ready meal - enter rm02");
+        System.out.println("To exit database - enter q");
+        System.out.println("To start menu - enter 'start'");
+        while (!"q".equals(selection)) {
+            selection = sc.next();
+            if ("rm01".equals(selection)) {
+                getAllreadyMeals();
+
+            } else if ("rm02".equals(selection)) {
+                addNewReadyMeal(sc);
+
+            } else if ("start".equals(selection)) {
+                start();
+            } else {
+                System.out.println("Good Bay!");
+                break;
+            }
+            whatToDoNext(sc, selection);
+        }
+    }
+    /**
+     * Start private methods for ready meal page**/
+    private void addNewReadyMeal(Scanner sc) {
+        ReadyMeal readyMeal = new ReadyMeal();
+        System.out.println("Enter dish name");
+        int dishId = dishController.getDishByName(sc.next()).getId();
+        readyMeal.setDishId(dishId);
+        readyMeal.setDishNumber(dishId);
+        System.out.println("Enter employee second name");
+        String secondName = sc.next();
+        System.out.println("Enter employee first name");
+        String firstName = sc.next();
+        Employee employee = null;
+        try {
+            employee = employeeController.findEmployeeByName(firstName, secondName);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot find employee by name " + ex);
+        }
+        readyMeal.setEmployeeId(employee.getId());
+        System.out.println("Select order id");
+        List<Order> openOrders = null;
+        try {
+            openOrders = orderController.getOpenOrClosedOrder("opened");
+            for (Order openOrder : openOrders) {
+                System.out.println("order_id " + openOrder.getId() + " ");
+            }
+            System.out.println("Select order id");
+            readyMeal.setOrderId(sc.nextInt());
+            readyMeal.setMealDate(new Date());
+            readyMealController.addMeal(readyMeal);
+
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot add meal " + ex);
+        }
+    }
+
+    private void getAllreadyMeals() {
+        try {
+            List<ReadyMeal> readyMeals = readyMealController.getAllMeal();
+            readyMeals.forEach(System.out::println);
+        } catch (RuntimeException e) {
+            LOGGER.error("Cannot get all ready meals " + e);
+        }
+    }
+    /**Stop private methods for ready meal page**/
+
+    private void goToWarehousePage(Scanner sc, String selection) {
+        System.out.println("Warehouse page. You have following options:");
+        System.out.println("Add ingredient to warehouse - enter w01\nRemove ingredient - enter w02\n" +
+                "Change amount of ingredient - enter w03\nFind ingredient by name - enter w04\n " +
+                "To see ingredients in lack - enter w05");
+        System.out.println("To exit database - enter q");
+        System.out.println("To start menu - enter 'start'");
+        while (!"q".equals(selection)) {
+            selection = sc.next();
+            if (selection.equals("w01")) {
+                addNewIngredient(sc);
+
+            } else if (selection.equals("w02")) {
+                removeIngredientByName(sc);
+
+            } else if (selection.equals("w03")) {
+                changeAmountOfIngredient(sc);
+
+            } else if (selection.equals("w04")) {
+                findIngredientByName(sc);
+
+            } else if (selection.equals("w05")) {
+                getAllIngredients();
+
+            } else if (selection.equals("start")) {
+                start();
+
+            } else {
+                System.out.println("Good Bay!");
+                noError = false;
+                break;
+            }
+            whatToDoNext(sc, selection);
+        }
+    }
+
+    /**
+     * Start private methods for warehouse page**/
+    private void getAllIngredients() {
+        try {
+            List<Warehouse> warehouseList = warehouseController.getAllWarehouseIngred();
+            warehouseList.forEach(System.out::println);
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot get all ingredients " + ex);
+        }
+    }
+
+    private void findIngredientByName(Scanner sc) {
+        System.out.println("Enter name of ingredient");
+        try {
+            Warehouse warehouse = warehouseController.findByName(sc.next());
+            System.out.println(warehouse);
+        } catch (RuntimeException e) {
+            System.out.println("No Ingredient with such name on warehouse");
+        }
+    }
+
+    private void changeAmountOfIngredient(Scanner sc) {
+        System.out.println("Enter name of ingredient to change it amount");
+        Ingredient ingredient = null;
+        try {
+            ingredient = ingredientController.getIngredientByName(sc.next());
+        } catch (RuntimeException ex) {
+            LOGGER.error("Cannot get ingredient by name");
+        }
+        System.out.println("Enter amount");
+        int amount = sc.nextInt();
+        System.out.println("If you want to increase amount enter y. If to decrease - n");
+        boolean increase = sc.next().equals("y");
+        if (ingredient !=null ) {
+            warehouseController.changeAmount(ingredient, amount, increase);
+        } else {
+            LOGGER.error("Ingredient was not selected in right way");
+        }
+    }
+
+    private void removeIngredientByName(Scanner sc) {
+        System.out.println("Enter name of ingredient to remove");
+        try {
+            warehouseController.removeIngredient(sc.next());
+        } catch (RuntimeException ex) {
+            LOGGER.error("cannot remove ingredient by this name!");
+        }
+    }
+
+    private void addNewIngredient(Scanner sc) {
+        System.out.println("Enter name of ingredient");
+        ingredientController.getAllIngredients().forEach(System.out::println);
+        String ingredientName = sc.next();
+        System.out.println("This ingredient is new in Ingredient department: 'y'/'n'");
+        boolean newIngred = sc.next().equals("y");
+        Ingredient ingredient = null;
+        if (!newIngred) {
+            try {
+                ingredient = ingredientController.getIngredientByName(ingredientName);
+            } catch (RuntimeException ex) {
+                LOGGER.error("Cannot get ingredient by this name");
+            }
+        } else {
+            ingredient = new Ingredient();
+            ingredient.setName(ingredientName);
+        }
+        System.out.println("Enter amount of ingredient");
+        int amount = sc.nextInt();
+        if (ingredient != null) {
+            warehouseController.addIngredient(ingredient, amount);
+        }
+    }
+    /**
+     * Stop private methods for warehouse page**/
+
+
+    private void startApplication() {
         System.out.println("Hi! You entered to restaurant database");
         System.out.println("Select you next step");
         System.out.println("d - work with dish information\ne - work with info about employee");
         System.out.println("m - work with menu information\no - work with info about orders");
         System.out.println("rm - work with ready meals information\nw - work with info about ingredients in warehouse");
+        System.out.println("q - to leave application");
     }
 
-    private boolean isValid(String s) {
+   /* private boolean isValid(String s) {
        return (s.equals("d") || s.equals("e") || s.equals("m") ||
                s.equals("o") || s.equals("rm") || s.equals("w"));
+    }*/
+
+    private boolean whatToDoNext(Scanner sc, String selection) {
+        System.out.println("Do you want continue on Dish page? 'y'\nGo to start menu - 'start'\n" +
+                "Quite - q");
+        String next = sc.next();
+        if (next.equals("y")) {
+            goToDishPage(sc, selection);
+        } else if (next.equals("start")){
+            start();
+        } else {
+            return true;
+        }
+        return false;
     }
 
     public void setIngredientController(IngredientController ingredientController) {
@@ -297,5 +748,13 @@ public class Main {
 
     public void setReadyMealController(ReadyMealController readyMealController) {
         this.readyMealController = readyMealController;
+    }
+
+    public void setEmployeeController(EmployeeController employeeController) {
+        this.employeeController = employeeController;
+    }
+
+    public void setNoError(boolean noError) {
+        this.noError = noError;
     }
 }

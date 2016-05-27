@@ -82,8 +82,8 @@ public class IngredientDAOImpl implements IngredientDAO {
             if (resultSet.next()) {
                 ingredient = createIngredient(resultSet);
             } else {
-                LOGGER.error("Cannot find ingredient bi this id");
-                throw new RuntimeException("Cannot find ingredient bi this id");
+                LOGGER.error("Cannot find ingredient bi this name");
+                throw new RuntimeException("Cannot find ingredient bi this name");
             }
 
         } catch (SQLException e) {

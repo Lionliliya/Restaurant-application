@@ -27,7 +27,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
             LOGGER.info("Successfully connected to DB");
             statement.setString(1, employee.getSecondName());
             statement.setString(2, employee.getFirstName());
-            statement.setDate(3, (Date) employee.getEmplDate());
+            statement.setDate(3, new Date(employee.getEmplDate().getTime()));
             statement.setString(4, employee.getPhone());
             statement.setString(5, employee.getPosition());
             statement.setInt(6, employee.getSalary());

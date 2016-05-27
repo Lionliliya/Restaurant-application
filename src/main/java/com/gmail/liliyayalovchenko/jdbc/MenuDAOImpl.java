@@ -9,7 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class MenuDAOImpl implements MenuDAO {
@@ -31,8 +30,9 @@ public class MenuDAOImpl implements MenuDAO {
             statement.setString(1, menuName);
             statement.executeUpdate();
             LOGGER.info("Menu added");
+            int menu_id = getMenuByName(menuName).getId();
             for (Dish dish : dishList) {
-                addDishToMenu(getMenuByName(menuName).getId(), dish);
+               addDishToMenu(menu_id, dish);
             }
             LOGGER.info("All dishes added to MENU_DISH");
         } catch (SQLException e) {
@@ -67,27 +67,23 @@ public class MenuDAOImpl implements MenuDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public Menu getMenuByName(String name) {
+        Menu menu = new Menu();
         LOGGER.info("Connecting to database. Method: getMenuByName(String name)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement
-                    ("SELECT * FROM MENU INNER JOIN MENU_DISH on id = menu_id WHERE name = ?")) {
+                    ("SELECT * FROM MENU  WHERE name = ?")) {
 
             LOGGER.info("Successfully connected to DB");
             statement.setString(1, name);
             ResultSet resultSet = statement.executeQuery();
-            resultSet.next();
-            Menu menu = new Menu();
-            List<Dish> dishs = new ArrayList<>();
-            menu.setId(resultSet.getInt("id"));
-            menu.setName(resultSet.getString("name"));
-            Dish dish = dishDAO.getDishById(resultSet.getInt("dish_id"));
-            dishs.add(dish);
-            while (resultSet.next()) {
-                dish = dishDAO.getDishById(resultSet.getInt("dish_id"));
-                dishs.add(dish);
+            if (resultSet.next()) {
+                int menuId = resultSet.getInt("id");
+                menu.setId(menuId);
+                menu.setName(resultSet.getString("name"));
+                List<Dish> dishList = dishDAO.getDishByMenuId(menuId);
+                menu.setDishList(dishList);
+                LOGGER.info("Menu is got");
             }
-            menu.setDishList(dishs);
-            LOGGER.info("Menu is got");
             return menu;
         } catch (SQLException e) {
             LOGGER.error("Exception occurred while connecting to DB " + e);
@@ -126,7 +122,7 @@ public class MenuDAOImpl implements MenuDAO {
         LOGGER.info("Connecting to database. Method: removeDishFromMenu(int menuId, Dish dish))");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement
-                    ("DELETE FROM MENU_DISH WHERE id = ? AND dish_id = ?")) {
+                    ("DELETE FROM MENU_DISH WHERE menu_id = ? AND dish_id = ?")) {
 
             LOGGER.info("Successfully connected to DB");
             statement.setInt(1, menuId);
@@ -163,7 +159,7 @@ public class MenuDAOImpl implements MenuDAO {
         LOGGER.info("Connecting to database. Method: deleteFromTableMenuDish(int menuId))");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement
-                    ("DELETE FROM MENU_DISH WHERE id = ?")) {
+                    ("DELETE FROM MENU_DISH WHERE menu_id = ?")) {
 
             LOGGER.info("Successfully connected to DB");
             statement.setInt(1, menuId);

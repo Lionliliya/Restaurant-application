@@ -9,10 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -166,10 +163,15 @@ public class Main {
         System.out.println("Enter category");
         String category = sc.next();
         dish.setCategory(category);
-        System.out.println("Enter price");
-        dish.setPrice(sc.nextDouble());
-        System.out.println("Enter weight");
-        dish.setWeight(sc.nextInt());
+        try {
+            System.out.println("Enter price");
+            dish.setPrice(sc.nextDouble());
+            System.out.println("Enter weight");
+            dish.setWeight(sc.nextInt());
+        } catch (InputMismatchException ex) {
+            LOGGER.error("Error wile parsing " + ex);
+            System.out.println("Wrong input");
+        }
         System.out.println("Enter ingredients. Then enter - f");
         List<Ingredient> ingredientList = new ArrayList<>();
         try {
@@ -628,7 +630,7 @@ public class Main {
         System.out.println("Warehouse page. You have following options:");
         System.out.println("Add ingredient to warehouse - enter w01\nRemove ingredient - enter w02\n" +
                 "Change amount of ingredient - enter w03\nFind ingredient by name - enter w04\n " +
-                "To see ingredients in lack - enter w05");
+                "To see all ingredients - enter w05");
         System.out.println("To exit database - enter q");
         System.out.println("To start menu - enter 'start'");
         while (!"q".equals(selection)) {

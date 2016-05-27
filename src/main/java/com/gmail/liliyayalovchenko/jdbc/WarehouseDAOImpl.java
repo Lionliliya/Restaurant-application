@@ -137,7 +137,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
             Statement statement = connection.createStatement()) {
 
             LOGGER.info("Successfully connected to DB");
-            String sql = "SELECT * FROM WAREHOUSE WHERE amount < 10";
+            String sql = "SELECT * FROM WAREHOUSE WHERE WAREHOUSE.amount < 10";
             ResultSet resultSet = statement.executeQuery(sql);
             LOGGER.info("Result set is got");
             while (resultSet.next()) {

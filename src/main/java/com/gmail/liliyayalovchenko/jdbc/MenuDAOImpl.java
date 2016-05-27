@@ -67,7 +67,7 @@ public class MenuDAOImpl implements MenuDAO {
     @Override
     @Transactional(propagation = Propagation.MANDATORY)
     public Menu getMenuByName(String name) {
-        Menu menu = new Menu();
+        Menu menu = null;
         LOGGER.info("Connecting to database. Method: getMenuByName(String name)");
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement
@@ -77,6 +77,7 @@ public class MenuDAOImpl implements MenuDAO {
             statement.setString(1, name);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
+                menu = new Menu();
                 int menuId = resultSet.getInt("id");
                 menu.setId(menuId);
                 menu.setName(resultSet.getString("name"));
@@ -84,7 +85,8 @@ public class MenuDAOImpl implements MenuDAO {
                 menu.setDishList(dishList);
                 LOGGER.info("Menu is got");
             }
-            return menu;
+            if (menu!=null) return menu;
+            else throw new RuntimeException("No menu by this name");
         } catch (SQLException e) {
             LOGGER.error("Exception occurred while connecting to DB " + e);
             throw new RuntimeException(e);

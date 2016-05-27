@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d6d2198-50a8-4be7-a8d5-203aa892392d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/IngredientDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/IngredientDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/OrderDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/OrderDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/ReadyMealDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/ReadyMealDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/WarehouseController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/controllers/WarehouseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/application-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc-2016-05-27.log" afterPath="$PROJECT_DIR$/jdbc-2016-05-27.log" />
     </list>
     <ignored path="RestaurantApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,23 +91,21 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3586777" vertical-offset="3871" max-vertical-offset="5040">
-              <caret line="568" column="50" selection-start-line="568" selection-start-column="50" selection-end-line="568" selection-end-column="50" />
+            <state vertical-scroll-proportion="1.2785234" vertical-offset="969" max-vertical-offset="7434">
+              <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#goToDishPage#0;class#Main#0" expanded="false" />
                 <element signature="method#getAllDishes#0;class#Main#0" expanded="false" />
                 <element signature="method#getDishByName#0;class#Main#0" expanded="false" />
                 <element signature="method#deleteDish#0;class#Main#0" expanded="false" />
                 <element signature="method#addNewDish#0;class#Main#0" expanded="false" />
+                <element signature="method#goToEmployeePage#0;class#Main#0" expanded="false" />
                 <element signature="method#findEmployeeByName#0;class#Main#0" expanded="false" />
                 <element signature="method#getAllEmployees#0;class#Main#0" expanded="false" />
                 <element signature="method#removeEmployee#0;class#Main#0" expanded="false" />
                 <element signature="method#addNewEmployee#0;class#Main#0" expanded="false" />
-                <element signature="method#goToMenuPage#0;class#Main#0" expanded="false" />
                 <element signature="method#addNewMenue#0;class#Main#0" expanded="false" />
                 <element signature="method#removeMenu#0;class#Main#0" expanded="false" />
-                <element signature="method#getMenuByName#0;class#Main#0" expanded="false" />
                 <element signature="method#showAllMenues#0;class#Main#0" expanded="false" />
                 <element signature="method#removeDishFromMenu#0;class#Main#0" expanded="false" />
                 <element signature="method#addDishToMenu#0;class#Main#0" expanded="false" />
@@ -125,24 +114,22 @@
                 <element signature="method#createOrder#0;class#Main#0" expanded="false" />
                 <element signature="method#getAllOpenOrClosedOrders#0;class#Main#0" expanded="false" />
                 <element signature="method#changeOrderStatus#0;class#Main#0" expanded="false" />
-                <element signature="method#goToReadyMealPage#0;class#Main#0" expanded="false" />
+                <element signature="method#deleteOrder#0;class#Main#0" expanded="false" />
                 <element signature="method#getAllreadyMeals#0;class#Main#0" expanded="false" />
-                <element signature="method#goToWarehousePage#0;class#Main#0" expanded="false" />
                 <element signature="method#getAllIngredients#0;class#Main#0" expanded="false" />
                 <element signature="method#findIngredientByName#0;class#Main#0" expanded="false" />
                 <element signature="method#changeAmountOfIngredient#0;class#Main#0" expanded="false" />
                 <element signature="method#removeIngredientByName#0;class#Main#0" expanded="false" />
                 <element signature="method#addNewIngredient#0;class#Main#0" expanded="false" />
                 <element signature="method#startApplication#0;class#Main#0" expanded="false" />
-                <element signature="method#whatToDoNext#0;class#Main#0" expanded="false" />
-                <element signature="e#27038#27039#0" expanded="true" />
-                <element signature="e#27090#27091#0" expanded="true" />
-                <element signature="e#27158#27159#0" expanded="true" />
-                <element signature="e#27210#27211#0" expanded="true" />
-                <element signature="e#27281#27282#0" expanded="true" />
-                <element signature="e#27335#27336#0" expanded="true" />
-                <element signature="e#27667#27668#0" expanded="true" />
-                <element signature="e#27705#27706#0" expanded="true" />
+                <element signature="e#29949#29950#0" expanded="true" />
+                <element signature="e#30001#30002#0" expanded="true" />
+                <element signature="e#30069#30070#0" expanded="true" />
+                <element signature="e#30121#30122#0" expanded="true" />
+                <element signature="e#30192#30193#0" expanded="true" />
+                <element signature="e#30246#30247#0" expanded="true" />
+                <element signature="e#30578#30579#0" expanded="true" />
+                <element signature="e#30616#30617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,16 +205,16 @@
       <file leaf-file-name="MenuDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2332" max-vertical-offset="3132">
-              <caret line="131" column="56" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3168">
+              <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
               <folding>
-                <marker date="1464295635743" expanded="true" signature="995:1028" placeholder="INSERT INTO ..." />
-                <marker date="1464295635743" expanded="true" signature="1949:1978" placeholder="DELETE FROM ..." />
-                <marker date="1464295635743" expanded="true" signature="2872:2906" placeholder="SELECT * FRO..MENU..." />
-                <marker date="1464295635743" expanded="true" signature="4013:4068" placeholder="SELECT * FRO..MENU..." />
-                <marker date="1464295635743" expanded="true" signature="5178:5233" placeholder="DELETE FROM ..." />
-                <marker date="1464295635743" expanded="true" signature="6068:6121" placeholder="INSERT INTO ..." />
-                <marker date="1464295635743" expanded="true" signature="6900:6939" placeholder="DELETE FROM ..." />
+                <marker date="1464353085667" expanded="true" signature="995:1028" placeholder="INSERT INTO ..." />
+                <marker date="1464353085667" expanded="true" signature="1949:1978" placeholder="DELETE FROM ..." />
+                <marker date="1464353085667" expanded="true" signature="2866:2900" placeholder="SELECT * FRO..MENU..." />
+                <marker date="1464353085667" expanded="true" signature="4127:4182" placeholder="SELECT * FRO..MENU..." />
+                <marker date="1464353085667" expanded="true" signature="5292:5347" placeholder="DELETE FROM ..." />
+                <marker date="1464353085667" expanded="true" signature="6182:6235" placeholder="INSERT INTO ..." />
+                <marker date="1464353085667" expanded="true" signature="7014:7053" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -317,9 +304,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/EmployeeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/DishDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/OrderDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/ReadyMealDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java" />
       </list>
     </option>
@@ -876,16 +863,16 @@
       <updated>1464021815308</updated>
       <workItem from="1464021817948" duration="3724000" />
       <workItem from="1464026907234" duration="5775000" />
-      <workItem from="1464076304430" duration="64948000" />
+      <workItem from="1464076304430" duration="73276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74447000" />
+    <option name="totallyTimeSpent" value="82775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -898,7 +885,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6296296" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47376543" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -916,36 +903,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39969134" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4212963" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22759715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1544,22 +1501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2332" max-vertical-offset="3132">
-          <caret line="131" column="56" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="56" />
-          <folding>
-            <marker date="1464295635743" expanded="true" signature="995:1028" placeholder="INSERT INTO ..." />
-            <marker date="1464295635743" expanded="true" signature="1949:1978" placeholder="DELETE FROM ..." />
-            <marker date="1464295635743" expanded="true" signature="2872:2906" placeholder="SELECT * FRO..MENU..." />
-            <marker date="1464295635743" expanded="true" signature="4013:4068" placeholder="SELECT * FRO..MENU..." />
-            <marker date="1464295635743" expanded="true" signature="5178:5233" placeholder="DELETE FROM ..." />
-            <marker date="1464295635743" expanded="true" signature="6068:6121" placeholder="INSERT INTO ..." />
-            <marker date="1464295635743" expanded="true" signature="6900:6939" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/OrderDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1081" max-vertical-offset="2880">
@@ -1614,25 +1555,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/jdbc/MenuDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3168">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+          <folding>
+            <marker date="1464353085667" expanded="true" signature="995:1028" placeholder="INSERT INTO ..." />
+            <marker date="1464353085667" expanded="true" signature="1949:1978" placeholder="DELETE FROM ..." />
+            <marker date="1464353085667" expanded="true" signature="2866:2900" placeholder="SELECT * FRO..MENU..." />
+            <marker date="1464353085667" expanded="true" signature="4127:4182" placeholder="SELECT * FRO..MENU..." />
+            <marker date="1464353085667" expanded="true" signature="5292:5347" placeholder="DELETE FROM ..." />
+            <marker date="1464353085667" expanded="true" signature="6182:6235" placeholder="INSERT INTO ..." />
+            <marker date="1464353085667" expanded="true" signature="7014:7053" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/liliyayalovchenko/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3586777" vertical-offset="3871" max-vertical-offset="5040">
-          <caret line="568" column="50" selection-start-line="568" selection-start-column="50" selection-end-line="568" selection-end-column="50" />
+        <state vertical-scroll-proportion="1.2785234" vertical-offset="969" max-vertical-offset="7434">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#goToDishPage#0;class#Main#0" expanded="false" />
             <element signature="method#getAllDishes#0;class#Main#0" expanded="false" />
             <element signature="method#getDishByName#0;class#Main#0" expanded="false" />
             <element signature="method#deleteDish#0;class#Main#0" expanded="false" />
             <element signature="method#addNewDish#0;class#Main#0" expanded="false" />
+            <element signature="method#goToEmployeePage#0;class#Main#0" expanded="false" />
             <element signature="method#findEmployeeByName#0;class#Main#0" expanded="false" />
             <element signature="method#getAllEmployees#0;class#Main#0" expanded="false" />
             <element signature="method#removeEmployee#0;class#Main#0" expanded="false" />
             <element signature="method#addNewEmployee#0;class#Main#0" expanded="false" />
-            <element signature="method#goToMenuPage#0;class#Main#0" expanded="false" />
             <element signature="method#addNewMenue#0;class#Main#0" expanded="false" />
             <element signature="method#removeMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#getMenuByName#0;class#Main#0" expanded="false" />
             <element signature="method#showAllMenues#0;class#Main#0" expanded="false" />
             <element signature="method#removeDishFromMenu#0;class#Main#0" expanded="false" />
             <element signature="method#addDishToMenu#0;class#Main#0" expanded="false" />
@@ -1641,24 +1596,22 @@
             <element signature="method#createOrder#0;class#Main#0" expanded="false" />
             <element signature="method#getAllOpenOrClosedOrders#0;class#Main#0" expanded="false" />
             <element signature="method#changeOrderStatus#0;class#Main#0" expanded="false" />
-            <element signature="method#goToReadyMealPage#0;class#Main#0" expanded="false" />
+            <element signature="method#deleteOrder#0;class#Main#0" expanded="false" />
             <element signature="method#getAllreadyMeals#0;class#Main#0" expanded="false" />
-            <element signature="method#goToWarehousePage#0;class#Main#0" expanded="false" />
             <element signature="method#getAllIngredients#0;class#Main#0" expanded="false" />
             <element signature="method#findIngredientByName#0;class#Main#0" expanded="false" />
             <element signature="method#changeAmountOfIngredient#0;class#Main#0" expanded="false" />
             <element signature="method#removeIngredientByName#0;class#Main#0" expanded="false" />
             <element signature="method#addNewIngredient#0;class#Main#0" expanded="false" />
             <element signature="method#startApplication#0;class#Main#0" expanded="false" />
-            <element signature="method#whatToDoNext#0;class#Main#0" expanded="false" />
-            <element signature="e#27038#27039#0" expanded="true" />
-            <element signature="e#27090#27091#0" expanded="true" />
-            <element signature="e#27158#27159#0" expanded="true" />
-            <element signature="e#27210#27211#0" expanded="true" />
-            <element signature="e#27281#27282#0" expanded="true" />
-            <element signature="e#27335#27336#0" expanded="true" />
-            <element signature="e#27667#27668#0" expanded="true" />
-            <element signature="e#27705#27706#0" expanded="true" />
+            <element signature="e#29949#29950#0" expanded="true" />
+            <element signature="e#30001#30002#0" expanded="true" />
+            <element signature="e#30069#30070#0" expanded="true" />
+            <element signature="e#30121#30122#0" expanded="true" />
+            <element signature="e#30192#30193#0" expanded="true" />
+            <element signature="e#30246#30247#0" expanded="true" />
+            <element signature="e#30578#30579#0" expanded="true" />
+            <element signature="e#30616#30617#0" expanded="true" />
           </folding>
         </state>
       </provider>

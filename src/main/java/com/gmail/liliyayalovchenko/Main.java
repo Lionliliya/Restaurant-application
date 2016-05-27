@@ -24,7 +24,7 @@ public class Main {
     private OrderController orderController;
     private ReadyMealController readyMealController;
     private EmployeeController employeeController;
-    private boolean noError;
+    private boolean stopApp;
 
 
     public static void main(String[] args) {
@@ -37,8 +37,8 @@ public class Main {
         startApplication();
         Scanner sc = new Scanner(System.in);
         String selection = null;
-        noError = true;
-        while (!"q".equals(selection) && noError) {
+        stopApp = false;
+        while (!"q".equals(selection) && !stopApp) {
 
             selection = sc.next();
 
@@ -63,13 +63,23 @@ public class Main {
 
             } else if ("q".equals(selection)) {
                 System.out.println("Good Bay!");
+                stopApp = true;
                 LOGGER.info("User left the application");
                 break;
             } else {
                 System.out.println("Wrong input!!! Try again");
             }
-
-            if (whatToDoNext(sc, selection)) break;
+            System.out.println("Do you want continue? - enter 'y'");
+            String next = sc.next();
+            if (next.equals("y")) {
+                selection = "continue";
+                stopApp = false;
+                startApplication();
+            } else {
+                stopApp = true;
+                LOGGER.info("User left the application");
+                break;
+            }
         }
     }
 
@@ -80,7 +90,7 @@ public class Main {
         System.out.println("To exit database - enter q");
         System.out.println("To start menu - enter 'start'");
 
-        while (!"q".equals(selection)) {
+        while (!"q".equals(selection) && !stopApp) {
             selection = sc.next();
             if (selection.equals("d01")) {
                 addNewDish(sc);
@@ -95,13 +105,19 @@ public class Main {
                 getAllDishes();
 
             } else if (selection.equals("start")) {
-                start();
+                break;
 
+            } else if (selection.equals("q")){
+                stopApp = true;
+                break;
             } else {
-                noError = false;
-
+                System.out.println("Wrong input! Try again!");
             }
-            if (whatToDoNext(sc, selection)) break;
+            System.out.println("Dish page. You have following options:");
+            System.out.println("Add new dish - enter d01\nRemove dish - enter d02\n" +
+                    "Get dish by name - enter d03\nGet all dishes - enter d04");
+            System.out.println("To exit database - enter q");
+            System.out.println("To start menu - enter 'start'");
         }
 
     }
@@ -194,14 +210,19 @@ public class Main {
                 findEmployeeByName(sc);
 
             } else if (selection.equals("start")) {
-                start();
-
-            } else {
-                System.out.println("Good Bay!");
-                noError = false;
                 break;
+
+            } else if (selection.equals("q")){
+                stopApp = true;
+                break;
+            } else {
+                System.out.println("Wrong input!Try again!");
             }
-            whatToDoNext(sc, selection);
+            System.out.println("Employee page. You have following options:");
+            System.out.println("Add new employee - enter e01\nRemove employee - enter e02\n" +
+                    "Get all employees - enter e03\nFind employee by name - enter e04");
+            System.out.println("To exit database - enter q");
+            System.out.println("To start menu - enter 'start'");
         }
     }
 
@@ -301,13 +322,19 @@ public class Main {
                 addDishToMenu(sc);
 
             } else if ("start".equals(selection)) {
-                start();
-            } else {
-                System.out.println("Good Bay!");
-                noError = false;
                 break;
+            } else if(selection.equals("q"))  {
+                stopApp = true;
+                break;
+            } else {
+                System.out.println("Wrong input!Try again!");
             }
-            whatToDoNext(sc, selection);
+            System.out.println("Menu page. You have following options:");
+            System.out.println("Add new menu - enter m01\nRemove menu - enter m02\n" +
+                    "Get menu by name - enter m03\nTo see all menus - enter m04\n" +
+                    "To remove dish from menu - enter m05\nTo add dish to menu - enter m06");
+            System.out.println("To exit database - enter q");
+            System.out.println("To start menu - enter 'start'");
         }
 
     }
@@ -413,13 +440,21 @@ public class Main {
                getAllOpenOrClosedOrders(sc);
 
             } else if ("start".equals(selection)) {
-                start();
-            } else {
-                System.out.println("Good Bay!");
-                noError = false;
                 break;
+
+            } else if ("q".equals(selection)) {
+                stopApp = true;
+                break;
+
+            } else {
+                System.out.println("Wrong input!Try again!");
             }
-            whatToDoNext(sc, selection);
+            System.out.println("Orders page. You have following options:");
+            System.out.println("Create order - enter o01\nAdd dish to open order - enter o02\n" +
+                    "Delete order - enter o03\nTo change order status - enter o04\n" +
+                    "To get all open or closed orders - enter o05");
+            System.out.println("To exit database - enter q");
+            System.out.println("To start menu - enter 'start'");
         }
     }
     /**
@@ -533,11 +568,16 @@ public class Main {
 
             } else if ("start".equals(selection)) {
                 start();
-            } else {
-                System.out.println("Good Bay!");
+            } else if ("q".equals(selection)) {
+                stopApp = true;
                 break;
+            } else {
+                System.out.println("Wrong input! try again!");
             }
-            whatToDoNext(sc, selection);
+            System.out.println("Ready meals page. You have following options:");
+            System.out.println("Get all ready meals - enter rm01\nAdd new ready meal - enter rm02");
+            System.out.println("To exit database - enter q");
+            System.out.println("To start menu - enter 'start'");
         }
     }
     /**
@@ -545,34 +585,32 @@ public class Main {
     private void addNewReadyMeal(Scanner sc) {
         ReadyMeal readyMeal = new ReadyMeal();
         System.out.println("Enter dish name");
-        int dishId = dishController.getDishByName(sc.next()).getId();
-        readyMeal.setDishId(dishId);
-        readyMeal.setDishNumber(dishId);
-        System.out.println("Enter employee second name");
-        String secondName = sc.next();
-        System.out.println("Enter employee first name");
-        String firstName = sc.next();
+        int dishId;
         Employee employee = null;
         try {
+            dishId = dishController.getDishByName(sc.next()).getId();
+            readyMeal.setDishId(dishId);
+            readyMeal.setDishNumber(dishId);
+            System.out.println("Enter employee second name");
+            String secondName = sc.next();
+            System.out.println("Enter employee first name");
+            String firstName = sc.next();
+
             employee = employeeController.findEmployeeByName(firstName, secondName);
-        } catch (RuntimeException ex) {
-            LOGGER.error("Cannot find employee by name " + ex);
-        }
-        readyMeal.setEmployeeId(employee.getId());
-        System.out.println("Select order id");
-        List<Order> openOrders = null;
-        try {
-            openOrders = orderController.getOpenOrClosedOrder("opened");
-            for (Order openOrder : openOrders) {
-                System.out.println("order_id " + openOrder.getId() + " ");
-            }
+
+            readyMeal.setEmployeeId(employee.getId());
             System.out.println("Select order id");
-            readyMeal.setOrderId(sc.nextInt());
-            readyMeal.setMealDate(new Date());
-            readyMealController.addMeal(readyMeal);
+            List<Order> openOrders = orderController.getOpenOrClosedOrder("opened");
+                for (Order openOrder : openOrders) {
+                    System.out.println("order_id " + openOrder.getId() + " ");
+                }
+                System.out.println("Select order id");
+                readyMeal.setOrderId(sc.nextInt());
+                readyMeal.setMealDate(new Date());
+                readyMealController.addMeal(readyMeal);
 
         } catch (RuntimeException ex) {
-            LOGGER.error("Cannot add meal " + ex);
+            LOGGER.error("Wrong input!!!Try again!");
         }
     }
 
@@ -611,14 +649,19 @@ public class Main {
                 getAllIngredients();
 
             } else if (selection.equals("start")) {
-                start();
+                break;
 
-            } else {
-                System.out.println("Good Bay!");
-                noError = false;
+            } else if ("q".equals(selection)) {
+                stopApp = true;
                 break;
             }
-            whatToDoNext(sc, selection);
+            System.out.println("Warehouse page. You have following options:");
+            System.out.println("Add ingredient to warehouse - enter w01\nRemove ingredient - enter w02\n" +
+                    "Change amount of ingredient - enter w03\nFind ingredient by name - enter w04\n " +
+                    "To see ingredients in lack - enter w05");
+            System.out.println("To exit database - enter q");
+            System.out.println("To start menu - enter 'start'");
+
         }
     }
 
@@ -754,7 +797,7 @@ public class Main {
         this.employeeController = employeeController;
     }
 
-    public void setNoError(boolean noError) {
-        this.noError = noError;
+    public void setStopApp(boolean stopApp) {
+        this.stopApp = stopApp;
     }
 }

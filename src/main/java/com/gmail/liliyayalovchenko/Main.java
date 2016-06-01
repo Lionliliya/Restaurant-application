@@ -22,7 +22,7 @@ public class Main {
     private ReadyMealController readyMealController;
     private EmployeeController employeeController;
     private boolean stopApp;
-
+    private int orderNumber;
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-context.xml");
@@ -31,6 +31,7 @@ public class Main {
     }
 
     private void start() {
+        orderNumber = 1005;
         startApplication();
         Scanner sc = new Scanner(System.in);
         String selection = null;
@@ -130,6 +131,7 @@ public class Main {
     }
 
     private void getDishByName(Scanner sc) {
+        showAllDishNames();
         System.out.println("Enter dish name");
         String name = sc.next();
         Dish dish;
@@ -143,6 +145,7 @@ public class Main {
     }
 
     private void deleteDish(Scanner sc) {
+        showAllDishNames();
         System.out.println("Enter dish name to delete");
         String name = sc.next();
         Dish dish;
@@ -186,6 +189,13 @@ public class Main {
         } catch (RuntimeException ex) {
             LOGGER.error("Cannot add dish " + ex);
         }
+    }
+
+    private void showAllDishNames() {
+        for (Dish dish : dishController.getAllDishes()) {
+            System.out.println(dish.getName());
+        }
+
     }
     /**
      * Stop private methods for dish page**/
@@ -231,6 +241,7 @@ public class Main {
     /**
      * Start private methods for employee page**/
     private void findEmployeeByName(Scanner sc) {
+        showAllEmplNames();
         System.out.println("Enter second name of employee");
         String secondName = sc.next();
         System.out.println("Enter first name of employee");
@@ -246,6 +257,12 @@ public class Main {
         }
     }
 
+    private void showAllEmplNames() {
+        for (Employee employee : employeeController.getAllEmployees()) {
+            System.out.println(employee.getSecondName() + " " + employee.getFirstName());
+        }
+    }
+
     private void getAllEmployees() {
         try {
             List<Employee> employeeList = employeeController.getAllEmployees();
@@ -256,6 +273,7 @@ public class Main {
     }
 
     private void removeEmployee(Scanner sc) {
+        showAllEmplNames();
         System.out.println("Enter second name of employee to delete");
         String secondName = sc.next();
         System.out.println("Enter first name of employee");
@@ -346,6 +364,7 @@ public class Main {
     private void addNewMenue(Scanner sc) {
         System.out.println("Enter name of new Menu");
         String nameMenu = sc.next();
+        showAllDishNames();
         System.out.println("Enter dish name to add to menu. To finish enter - 'f'");
         List<Dish> dishList = new ArrayList<>();
         String dishName;
@@ -355,14 +374,15 @@ public class Main {
             try {
                 Dish dish = dishController.getDishByName(dishName);
                 dishList.add(dish);
-                menuController.addNewMenu(nameMenu, dishList);
             } catch (RuntimeException e) {
                 LOGGER.error("Exception " + e);
             }
         }
+        menuController.addNewMenu(nameMenu, dishList);
     }
 
     private void removeMenu(Scanner sc) {
+        menuController.showAllMenus();
         System.out.println("Enter name of menu to delete");
         try {
             Menu menu = menuController.getMenuByName(sc.next());
@@ -391,9 +411,11 @@ public class Main {
     }
 
     private void removeDishFromMenu(Scanner sc) {
+        menuController.showAllMenus();
         System.out.println("Enter menu name you want to remove dish");
         try {
             Menu menu = menuController.getMenuByName(sc.next());
+            showAllDishNames();
             System.out.println("Enter dish name to remove");
             Dish dish = dishController.getDishByName(sc.next());
             menuController.removeDishFromMenu(menu.getId(), dish);
@@ -403,15 +425,17 @@ public class Main {
     }
 
     private void addDishToMenu(Scanner sc) {
+        menuController.showAllMenus();
         System.out.println("Enter menu name you want to add dish");
-        Menu menu = menuController.getMenuByName(sc.next());
-        System.out.println("Enter dish name to add");
-        Dish dish;
         try {
+        Menu menu = menuController.getMenuByName(sc.next());
+        showAllDishNames();
+        Dish dish;
+
             dish = dishController.getDishByName(sc.next());
             menuController.addDishToMenu(menu.getId(), dish);
         } catch (RuntimeException ex) {
-            LOGGER.error("Cannot gat dish by this name " + ex);
+            LOGGER.error("Cannot gat dish or menu " + ex);
         }
     }
     /**
@@ -463,6 +487,7 @@ public class Main {
      * Start private methods for Order page**/
     private void addDishToOpenOrder(Scanner sc) {
         System.out.println("Enter dish name");
+        showAllDishNames();
         Dish dish;
         try {
             dish = dishController.getDishByName(sc.next());
@@ -480,7 +505,8 @@ public class Main {
 
     private void createOrder(Scanner sc) {
         Order order = new Order();
-        order.setOrderNumber(1004);
+        order.setOrderNumber(orderNumber++);
+        showAllEmplNames();
         System.out.println("Enter employee second name");
         String secondName = sc.next();
         System.out.println("Enter employee firstName");
@@ -493,10 +519,7 @@ public class Main {
             order.setTableNumber(sc.nextInt());
             order.setOrderDate(new Date());
             order.setStatus("opened");
-
-            for (Dish dish : dishController.getAllDishes()) {
-                System.out.println("Dish " + dish.getName());
-            }
+            showAllDishNames();
             System.out.println("Enter name of dish to add to order, to stop - enter twice 'f'");
             List<Dish> dishForOrder = new ArrayList<>();
             String next1;
@@ -531,9 +554,7 @@ public class Main {
 
     private void changeOrderStatus(Scanner sc) {
         System.out.println("Enter number of order to change status to 'closed'");
-        for (Order order : orderController.getOpenOrClosedOrder("opened")) {
-            System.out.print(order.getOrderNumber() + " ");
-        }
+        showOpenedOrdersNumb();
         try {
             orderController.changeOrderStatus(sc.nextInt());
         } catch (RuntimeException e) {
@@ -541,11 +562,15 @@ public class Main {
         }
     }
 
+    private void showOpenedOrdersNumb() {
+        for (Order order : orderController.getOpenOrClosedOrder("opened")) {
+            System.out.println("Order #" + order.getOrderNumber());
+        }
+    }
+
     private void deleteOrder(Scanner sc) {
         System.out.println("Enter number of order to delete");
-        for (Order order : orderController.getOpenOrClosedOrder("opened")) {
-            System.out.println("order " + order.getOrderNumber() + " ");
-        }
+        showOpenedOrdersNumb();
         try {
             orderController.deleteOrder(sc.nextInt());
         } catch (RuntimeException ex) {
@@ -586,6 +611,7 @@ public class Main {
      * Start private methods for ready meal page**/
     private void addNewReadyMeal(Scanner sc) {
         ReadyMeal readyMeal = new ReadyMeal();
+        showAllDishNames();
         System.out.println("Enter dish name");
         int dishId;
         Employee employee = null;
@@ -593,23 +619,23 @@ public class Main {
             dishId = dishController.getDishByName(sc.next()).getId();
             readyMeal.setDishId(dishId);
             readyMeal.setDishNumber(dishId);
+            showAllEmplNames();
             System.out.println("Enter employee second name");
             String secondName = sc.next();
             System.out.println("Enter employee first name");
             String firstName = sc.next();
-
             employee = employeeController.findEmployeeByName(firstName, secondName);
-
             readyMeal.setEmployeeId(employee.getId());
-            System.out.println("Select order id");
             List<Order> openOrders = orderController.getOpenOrClosedOrder("opened");
-                for (Order openOrder : openOrders) {
+
+            for (Order openOrder : openOrders) {
                     System.out.println("order_id " + openOrder.getId() + " ");
-                }
-                System.out.println("Select order id");
-                readyMeal.setOrderId(sc.nextInt());
-                readyMeal.setMealDate(new Date());
-                readyMealController.addMeal(readyMeal);
+            }
+
+            System.out.println("Select order id");
+            readyMeal.setOrderId(sc.nextInt());
+            readyMeal.setMealDate(new Date());
+            readyMealController.addMeal(readyMeal);
 
         } catch (RuntimeException ex) {
             LOGGER.error("Wrong input!!!Try again!");
@@ -679,6 +705,7 @@ public class Main {
     }
 
     private void findIngredientByName(Scanner sc) {
+        showAllIngredNames();
         System.out.println("Enter name of ingredient");
         try {
             Warehouse warehouse = warehouseController.findByName(sc.next());
@@ -688,7 +715,14 @@ public class Main {
         }
     }
 
+    private void showAllIngredNames() {
+        for (Ingredient ingredient : ingredientController.getAllIngredients()) {
+            System.out.println(ingredient.getName());
+        }
+    }
+
     private void changeAmountOfIngredient(Scanner sc) {
+        showAllIngredNames();
         System.out.println("Enter name of ingredient to change it amount");
         Ingredient ingredient = null;
         try {
@@ -708,6 +742,7 @@ public class Main {
     }
 
     private void removeIngredientByName(Scanner sc) {
+        showAllIngredNames();
         System.out.println("Enter name of ingredient to remove");
         try {
             warehouseController.removeIngredient(sc.next());
@@ -757,20 +792,6 @@ public class Main {
                s.equals("o") || s.equals("rm") || s.equals("w"));
     }*/
 
-    private boolean whatToDoNext(Scanner sc, String selection) {
-        System.out.println("Do you want continue on Dish page? 'y'\nGo to start menu - 'start'\n" +
-                "Quite - q");
-        String next = sc.next();
-        if (next.equals("y")) {
-            goToDishPage(sc, selection);
-        } else if (next.equals("start")){
-            start();
-        } else {
-            return true;
-        }
-        return false;
-    }
-
     public void setIngredientController(IngredientController ingredientController) {
         this.ingredientController = ingredientController;
     }
@@ -801,5 +822,9 @@ public class Main {
 
     public void setStopApp(boolean stopApp) {
         this.stopApp = stopApp;
+    }
+
+    public void setOrderNumber(int orderNumber) {
+        this.orderNumber = orderNumber;
     }
 }

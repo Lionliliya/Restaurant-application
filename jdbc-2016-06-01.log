@@ -1,0 +1,1928 @@
+10:33:07.264 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+10:33:07.380 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+10:33:37.719 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9h30oga7rgrqt1|20ce78ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9h30oga7rgrqt1|20ce78ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:33:38.120 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:33:38.124 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:33:38.160 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:34:12.071 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:34:12.091 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:34:12.112 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:34:12.113 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.114 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:34:12.125 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.127 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:34:12.127 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.136 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.149 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.162 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.163 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.165 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.165 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.166 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.167 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.167 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:34:12.168 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:34:12.168 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:34:12.168 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.169 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:34:12.170 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.170 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.171 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.172 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.173 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.173 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.174 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.175 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.176 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.177 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.178 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.179 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.180 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.181 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.181 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.181 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:34:12.182 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:34:12.182 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:34:12.183 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.184 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:34:12.185 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.185 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.186 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.187 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.187 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.188 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.189 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.190 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.191 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.191 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.193 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.193 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.194 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.195 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.195 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.196 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.197 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.197 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.198 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:34:12.198 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:34:12.198 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:34:12.215 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+10:34:12.215 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.220 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+10:34:12.220 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.221 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.222 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.222 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.223 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.224 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.224 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.224 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.225 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.225 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.226 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.226 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.227 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.227 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.227 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.228 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.228 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.229 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.229 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+10:34:12.229 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+10:34:12.229 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.229 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.230 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.230 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.231 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.232 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.232 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.233 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.233 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.233 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.234 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.235 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.235 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.235 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.236 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.236 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+10:34:12.236 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+10:34:12.236 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.236 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.237 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.237 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+10:34:12.237 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+10:34:12.237 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.238 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.238 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.239 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.239 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.239 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.240 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.240 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.241 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.241 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+10:34:12.241 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+10:34:12.241 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.241 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.242 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.242 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.243 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.244 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.244 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.245 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.245 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.247 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.247 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.247 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.248 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+10:34:12.248 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+10:34:12.248 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.248 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.249 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.249 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.251 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.252 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.252 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.253 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.253 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.253 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.254 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.254 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.255 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.255 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.256 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.256 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+10:34:12.256 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+10:34:12.256 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.257 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.258 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.258 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.259 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.260 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.260 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.261 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.262 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:34:12.262 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:34:12.263 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:34:12.263 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.264 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+10:34:12.264 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+10:34:12.264 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.265 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.266 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.266 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+10:34:12.266 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+10:34:12.266 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:34:12.267 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:34:12.267 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:34:12.268 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+10:35:41.939 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+10:35:41.940 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:41.942 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:35:41.942 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:41.943 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:41.944 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:41.944 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:35:41.948 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+10:35:41.949 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:35:41.988 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+10:35:55.151 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+10:35:55.152 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.153 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+10:35:55.153 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.153 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.154 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.154 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.155 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.156 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.156 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.157 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.157 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.158 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.158 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.159 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.159 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.160 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.160 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.160 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.161 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.161 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.161 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+10:35:55.162 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+10:35:55.162 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.162 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.163 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.163 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.164 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.164 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.164 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.165 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.165 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.165 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.166 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.167 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.167 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.168 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.168 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.168 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+10:35:55.169 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+10:35:55.169 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.169 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.169 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.170 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+10:35:55.170 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+10:35:55.170 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.170 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.171 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.171 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.171 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.172 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.172 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.173 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.173 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.173 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+10:35:55.173 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+10:35:55.173 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.174 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.174 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.175 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.175 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.176 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.177 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.177 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.178 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.178 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.179 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.179 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.180 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.180 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.181 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.181 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+10:35:55.181 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+10:35:55.181 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.182 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.183 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.183 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.183 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.184 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.184 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.185 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.185 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.185 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.186 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.186 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.186 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.187 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.187 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.187 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.188 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.188 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.188 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+10:35:55.188 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+10:35:55.189 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.189 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.189 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.190 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.190 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.190 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.191 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.191 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.192 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:35:55.192 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:35:55.193 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:35:55.193 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.194 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+10:35:55.194 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+10:35:55.194 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.194 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.195 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.195 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+10:35:55.195 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+10:35:55.195 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:35:55.195 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:35:55.196 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:35:55.196 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+10:36:21.603 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+10:36:21.603 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:21.605 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:36:21.605 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:36:21.605 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:21.606 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:36:21.606 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:36:21.609 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+10:36:21.609 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:36:21.652 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu added
+10:36:21.653 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:36:21.653 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:36:21.655 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:36:21.655 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:21.656 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:36:21.657 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:21.658 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:36:21.659 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:36:21.659 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:21.660 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:21.669 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:21.670 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:21.671 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:21.671 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:21.672 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:21.672 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:21.672 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:21.673 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:21.673 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:36:21.673 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:36:21.673 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:36:21.674 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:36:21.674 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+10:36:21.674 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:36:21.719 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+10:36:21.719 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes added to MENU_DISH
+10:36:34.654 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+10:36:34.655 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:34.656 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:36:34.657 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:36:34.657 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:34.658 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:34.659 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:34.660 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:34.661 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:34.662 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:34.662 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:34.663 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:34.663 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:34.664 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:34.665 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:36:34.665 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:36:34.666 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+10:36:34.666 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:36:34.759 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu added
+10:36:34.759 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:36:34.760 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:36:34.760 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:36:34.761 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:34.761 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:36:34.761 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:34.762 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:36:34.762 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:36:34.762 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:34.763 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:34.763 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:34.764 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:34.764 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:34.767 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:34.768 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:34.769 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:36:34.769 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:36:34.770 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:36:34.770 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:36:34.771 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:36:34.771 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:36:34.771 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:36:34.771 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:34.775 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:36:34.775 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:36:34.775 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:36:34.776 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:36:34.776 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:36:34.776 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:36:34.776 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:36:34.776 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+10:36:34.777 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:36:34.848 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+10:36:34.849 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+10:36:34.849 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:36:34.982 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+10:36:34.983 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes added to MENU_DISH
+10:37:07.489 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:37:07.490 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:37:07.493 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:37:25.038 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:37:25.038 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:37:25.041 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:37:35.919 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:37:35.919 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:41:38.053 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+10:41:38.211 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+10:42:24.042 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9h30zef5mra44x|393671df, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9h30zef5mra44x|393671df, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10:42:24.475 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:42:24.481 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:42:24.496 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:42:44.333 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:42:44.352 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:42:44.366 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:42:44.367 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.368 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:42:44.376 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.377 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:42:44.378 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:42:44.385 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.402 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:42:44.411 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:42:44.413 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:42:44.414 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:42:44.414 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:42:44.415 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:42:44.416 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:42:44.416 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:42:44.417 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:42:44.419 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:42:44.420 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:42:44.420 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:42:44.420 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:42:44.421 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.427 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:42:44.428 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:42:44.428 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.429 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:42:44.430 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:42:44.430 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:42:44.430 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:42:44.431 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.432 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:42:44.432 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:42:44.433 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.433 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:42:44.434 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:42:44.434 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:42:44.434 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:42:44.435 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.437 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:42:44.437 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:42:44.437 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:42:44.438 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:42:44.439 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:42:44.440 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:42:44.441 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:42:44.441 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:42:44.442 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:42:44.450 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:42:44.451 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:42:44.452 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:42:44.452 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:42:44.453 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:42:44.453 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:42:44.454 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:42:44.460 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: removeMenu(Menu menu))
+10:42:44.460 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:42:44.460 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: deleteFromTableMenuDish(int menuId))
+10:42:44.461 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:42:44.500 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu with id 5 deleted
+10:42:44.500 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes are deleted from MENU_DISH
+10:42:44.567 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu deleted
+10:42:52.991 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:42:52.991 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:42:52.994 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:43:22.240 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+10:43:22.241 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.243 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+10:43:22.243 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.243 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.244 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.245 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.247 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.248 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.248 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.249 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.249 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.251 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.252 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.252 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.253 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+10:43:22.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+10:43:22.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.256 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.256 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.257 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.258 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.258 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.259 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.260 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.260 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.261 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.262 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.262 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.263 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.263 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.263 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+10:43:22.264 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+10:43:22.264 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.264 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.265 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.265 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+10:43:22.265 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+10:43:22.265 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.266 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.266 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.267 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.267 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.268 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.268 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.269 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.270 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.270 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+10:43:22.270 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+10:43:22.270 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.271 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.272 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.272 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.273 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.274 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.274 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.275 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.275 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.275 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.276 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.277 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.277 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.278 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.278 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.278 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+10:43:22.279 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+10:43:22.279 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.279 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.280 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.280 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.281 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.282 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.282 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.283 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.284 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.285 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.286 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.286 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.286 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.287 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.288 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.288 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.289 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.289 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.290 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+10:43:22.290 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+10:43:22.290 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.290 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.291 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.292 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.292 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.293 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.293 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.294 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.294 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:22.295 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:22.295 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:22.299 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.299 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+10:43:22.300 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+10:43:22.300 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.300 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.301 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.301 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+10:43:22.302 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+10:43:22.302 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:22.303 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:22.303 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:22.304 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+10:43:27.024 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+10:43:27.025 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:27.027 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:43:27.028 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:27.028 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:27.030 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:27.031 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:43:27.034 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+10:43:27.036 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:43:27.083 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu added
+10:43:27.083 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:43:27.084 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:43:27.085 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:43:27.086 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:27.087 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:43:27.087 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+10:43:27.088 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:43:27.217 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+10:43:27.217 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes added to MENU_DISH
+10:43:34.139 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+10:43:34.140 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:34.142 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:43:34.142 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:34.143 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:34.144 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:34.145 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:34.146 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:34.147 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:34.148 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:34.149 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:34.150 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:43:34.151 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:43:34.151 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:43:34.152 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:34.152 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:43:34.153 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+10:43:34.153 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:43:34.186 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu added
+10:43:34.186 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:43:34.187 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:43:34.187 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:43:34.187 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:34.188 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:43:34.188 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:34.189 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:43:34.189 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:43:34.189 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:43:34.190 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:43:34.190 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:43:34.190 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:43:34.190 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:43:34.190 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+10:43:34.190 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:43:34.231 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+10:43:34.231 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+10:43:34.231 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:43:34.264 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+10:43:34.265 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes added to MENU_DISH
+10:43:45.363 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:43:45.364 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:43:45.368 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:47:09.024 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:47:09.024 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:09.027 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:47:20.306 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:47:20.307 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:20.308 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:47:20.309 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:47:20.310 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:47:20.312 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:47:20.314 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:47:20.314 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:47:20.315 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:47:20.317 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:47:20.317 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:47:20.317 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:47:20.318 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:47:20.318 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:47:20.319 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:47:20.319 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:47:20.320 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:47:20.320 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:47:20.320 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:47:20.320 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:47:20.320 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+10:47:20.321 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:47:20.321 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:47:20.321 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+10:47:20.322 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:47:20.322 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:47:20.322 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:47:20.323 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:47:20.323 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:47:20.323 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:47:20.324 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:47:20.324 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+10:47:20.324 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+10:47:20.325 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+10:47:20.325 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+10:47:20.325 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+10:47:20.326 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+10:47:20.326 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:47:20.330 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: removeMenu(Menu menu))
+10:47:20.330 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:20.330 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: deleteFromTableMenuDish(int menuId))
+10:47:20.331 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:20.372 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu with id 6 deleted
+10:47:20.373 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes are deleted from MENU_DISH
+10:47:20.439 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu deleted
+10:47:33.102 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:47:33.103 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:33.104 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:47:44.765 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:47:44.766 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:44.768 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:47:48.265 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:47:48.266 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:48.268 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:47:48.269 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:47:48.270 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:47:48.275 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: removeMenu(Menu menu))
+10:47:48.276 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:48.276 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: deleteFromTableMenuDish(int menuId))
+10:47:48.276 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:47:48.277 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu with id 7 deleted
+10:47:48.277 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes are deleted from MENU_DISH
+10:47:48.321 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu deleted
+10:48:11.448 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:48:11.448 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:48:11.450 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:48:15.960 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+10:48:15.960 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:48:15.963 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+10:48:21.520 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+10:48:21.521 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:48:21.523 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+10:48:21.523 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+10:48:21.525 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+10:48:21.527 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: removeMenu(Menu menu))
+10:48:21.528 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:48:21.528 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: deleteFromTableMenuDish(int menuId))
+10:48:21.528 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+10:48:21.529 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu with id 8 deleted
+10:48:21.530 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes are deleted from MENU_DISH
+10:48:21.580 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu deleted
+11:03:49.355 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+11:03:49.499 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+11:04:08.996 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9h31rxnnj8mjr8|7714e963, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9h31rxnnj8mjr8|7714e963, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+11:04:09.373 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+11:04:09.379 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.395 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+11:04:09.396 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.428 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.444 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.455 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.456 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.458 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.458 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.459 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.460 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.461 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.462 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.462 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.463 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.464 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.464 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.465 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.466 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.466 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.467 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+11:04:09.467 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+11:04:09.467 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.468 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.469 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.469 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.470 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.471 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.471 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.472 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.473 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.473 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.474 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.475 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.475 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.476 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.476 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.477 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+11:04:09.477 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+11:04:09.477 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.478 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.479 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.479 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+11:04:09.480 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+11:04:09.480 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.480 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.481 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.482 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.483 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.483 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.484 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.485 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.485 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.486 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+11:04:09.486 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+11:04:09.486 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.488 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.489 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.490 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.491 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.492 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.492 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.493 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.494 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.494 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.495 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.496 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.496 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.497 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.497 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.498 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+11:04:09.498 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+11:04:09.498 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.498 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.499 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.500 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.501 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.501 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.502 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.503 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.504 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.504 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.505 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.506 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.506 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.507 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.508 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.508 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.509 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.509 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.510 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+11:04:09.510 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+11:04:09.510 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.510 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.511 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.512 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.512 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.513 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.514 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.514 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.515 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:09.515 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:09.516 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:09.517 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.517 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+11:04:09.517 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+11:04:09.517 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.518 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.518 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.519 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+11:04:09.519 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+11:04:09.519 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:09.519 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:09.520 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:09.520 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+11:04:16.534 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:04:16.534 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:16.536 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:04:16.537 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:16.537 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:16.539 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:16.541 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:04:16.584 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+11:04:16.586 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:04:16.626 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu added
+11:04:16.626 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+11:04:16.626 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:04:16.627 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+11:04:16.628 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:16.629 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+11:04:16.629 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+11:04:16.629 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:04:16.672 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+11:04:16.672 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes added to MENU_DISH
+11:04:25.049 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:04:25.050 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:25.052 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:04:25.053 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:04:25.054 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:04:25.055 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:25.056 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:25.057 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:25.058 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:25.059 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:25.061 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:25.062 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:04:25.063 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:04:25.064 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:04:25.065 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:04:25.065 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:04:25.066 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+11:04:25.067 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:04:25.116 [main] ERROR c.g.l.jdbc.MenuDAOImpl - Exception occurred while connecting to DB com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'Drinks' for key 'name'
+11:04:25.117 [main] ERROR com.gmail.liliyayalovchenko.Main - Exception java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'Drinks' for key 'name'
+11:05:27.783 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+11:05:27.783 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:05:27.788 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+11:05:42.362 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+11:05:42.362 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:05:42.369 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+11:05:48.941 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+11:05:48.942 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:05:48.944 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+11:05:48.945 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:48.947 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+11:05:48.948 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:48.949 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:05:48.950 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:48.951 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:48.952 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:48.952 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:05:48.952 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:05:48.952 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+11:05:48.955 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: removeMenu(Menu menu))
+11:05:48.955 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:05:48.955 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: deleteFromTableMenuDish(int menuId))
+11:05:48.956 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:05:49.002 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu with id 9 deleted
+11:05:49.003 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes are deleted from MENU_DISH
+11:05:49.047 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu deleted
+11:05:58.220 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+11:05:58.220 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.222 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+11:05:58.222 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.222 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.224 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.229 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.230 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.230 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.231 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.232 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.232 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.233 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.234 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.234 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.235 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.235 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.236 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.237 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.237 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.238 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.238 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+11:05:58.239 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+11:05:58.239 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.239 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.240 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.240 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.241 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.242 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.242 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.243 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.244 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.244 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.245 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.245 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.247 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.247 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+11:05:58.247 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+11:05:58.247 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.247 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.248 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.248 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+11:05:58.249 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+11:05:58.249 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.249 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.251 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.251 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.251 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.252 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.252 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.252 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+11:05:58.253 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+11:05:58.253 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.253 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.254 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.254 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.255 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.255 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.255 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.256 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.257 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.257 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.258 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.258 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.258 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.259 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.259 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.260 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+11:05:58.260 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+11:05:58.260 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.261 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.262 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.262 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.262 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.263 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.263 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.264 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.264 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.265 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.265 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.266 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.266 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.267 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.267 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.268 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.269 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.269 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.269 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+11:05:58.270 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+11:05:58.270 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.270 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.271 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.271 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.272 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.273 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.273 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.274 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.274 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:05:58.274 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:05:58.275 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:05:58.275 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.276 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+11:05:58.276 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+11:05:58.276 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.276 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.277 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.278 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+11:05:58.278 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+11:05:58.279 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:05:58.279 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:05:58.280 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:05:58.281 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+11:06:03.610 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:06:03.611 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:06:03.613 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:06:03.613 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:06:03.614 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:06:03.615 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:06:03.616 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:06:03.619 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+11:06:03.621 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:06:03.663 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu added
+11:06:03.663 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+11:06:03.663 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:06:03.664 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+11:06:03.664 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:06:03.665 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+11:06:03.665 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+11:06:03.665 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:06:03.707 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+11:06:03.708 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes added to MENU_DISH
+11:06:10.038 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:06:10.039 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:06:10.040 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:06:10.041 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:06:10.041 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:06:10.042 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:06:10.042 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:06:10.043 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:06:10.044 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:06:10.044 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:06:10.046 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:06:10.047 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:06:10.047 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:06:10.048 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:06:10.049 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:06:10.049 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:06:10.052 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+11:06:10.053 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:06:10.089 [main] ERROR c.g.l.jdbc.MenuDAOImpl - Exception occurred while connecting to DB com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'Drinks' for key 'name'
+11:06:10.090 [main] ERROR com.gmail.liliyayalovchenko.Main - Exception java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'Drinks' for key 'name'
+11:13:11.603 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+11:13:11.841 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+11:13:45.803 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9h323zir1snga5z|7714e963, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9h323zir1snga5z|7714e963, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+11:13:46.179 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+11:13:46.183 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:13:46.195 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+11:13:54.805 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+11:13:54.805 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:13:54.812 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+11:14:02.940 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+11:14:02.960 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:14:02.976 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+11:14:02.977 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:02.978 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+11:14:02.989 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:02.991 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:14:02.991 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:03.000 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:03.001 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:03.002 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:14:03.002 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:14:03.002 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+11:14:03.004 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: removeMenu(Menu menu))
+11:14:03.004 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:14:03.004 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: deleteFromTableMenuDish(int menuId))
+11:14:03.004 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:14:03.046 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu with id 11 deleted
+11:14:03.046 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes are deleted from MENU_DISH
+11:14:03.135 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu deleted
+11:14:22.625 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+11:14:22.626 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:14:22.630 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+11:14:32.732 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+11:14:32.732 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.734 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+11:14:32.734 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.736 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.757 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.757 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.758 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.760 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.760 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.761 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.762 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.763 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.764 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.764 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.765 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.766 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.767 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.767 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.768 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.770 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.770 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+11:14:32.771 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+11:14:32.773 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.775 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.776 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.776 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.777 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.778 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.778 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.779 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.780 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.781 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.782 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.783 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.784 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.785 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.786 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.786 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+11:14:32.787 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+11:14:32.787 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.787 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.788 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.788 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+11:14:32.789 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+11:14:32.789 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.789 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.790 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.791 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.791 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.792 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.792 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.793 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.794 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.794 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+11:14:32.794 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+11:14:32.794 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.795 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.796 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.796 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.797 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.798 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.798 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.799 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.800 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.801 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.802 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.803 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.803 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.804 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.804 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.805 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+11:14:32.805 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+11:14:32.805 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.805 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.806 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.807 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.807 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.808 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.808 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.809 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.810 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.811 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.812 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.812 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.813 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.814 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.814 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.815 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.815 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.816 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.816 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+11:14:32.816 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+11:14:32.817 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.817 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.818 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.819 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.819 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.820 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.821 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.821 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.822 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:32.822 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:32.822 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:32.823 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.823 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+11:14:32.823 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+11:14:32.823 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.823 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.824 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.824 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+11:14:32.824 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+11:14:32.824 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:32.825 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:32.825 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:32.825 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+11:14:38.701 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:14:38.701 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:38.703 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:14:38.703 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:38.703 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:38.704 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:38.705 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:14:38.708 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+11:14:38.709 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:14:38.751 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu added
+11:14:38.752 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+11:14:38.752 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:14:38.753 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+11:14:38.754 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:38.755 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+11:14:38.756 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+11:14:38.756 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:14:38.796 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+11:14:38.796 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes added to MENU_DISH
+11:14:58.539 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:14:58.539 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:58.541 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:14:58.541 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:14:58.542 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:14:58.545 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:58.546 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:58.547 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:58.549 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:58.549 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:58.550 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:58.551 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:14:58.551 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:14:58.552 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:14:58.552 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:14:58.552 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:14:58.554 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+11:14:58.554 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:14:58.602 [main] ERROR c.g.l.jdbc.MenuDAOImpl - Exception occurred while connecting to DB com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'Drinks' for key 'name'
+11:16:05.298 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+11:16:05.513 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+11:16:17.860 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9h327pip1mznai7|393671df, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9h327pip1mznai7|393671df, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+11:16:18.283 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+11:16:18.289 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:18.306 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+11:16:23.637 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+11:16:23.637 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:23.641 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+11:16:28.288 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+11:16:28.316 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:28.339 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+11:16:28.340 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:28.341 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishById(int dish_id)
+11:16:28.350 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:28.353 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:16:28.353 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:28.363 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:28.364 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:28.365 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:16:28.365 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:16:28.366 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+11:16:28.368 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: removeMenu(Menu menu))
+11:16:28.368 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:28.368 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: deleteFromTableMenuDish(int menuId))
+11:16:28.369 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:28.411 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu with id 13 deleted
+11:16:28.412 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes are deleted from MENU_DISH
+11:16:28.478 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu deleted
+11:16:35.102 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+11:16:35.103 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.104 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+11:16:35.105 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.105 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.118 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.118 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.119 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.119 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.119 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.120 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.120 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.121 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.121 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.122 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.122 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.123 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.123 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.124 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.124 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.125 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.125 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+11:16:35.125 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+11:16:35.125 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.125 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.126 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.127 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.127 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.128 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.128 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.129 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.129 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.130 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.131 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.132 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.132 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.133 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.134 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.134 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+11:16:35.134 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+11:16:35.134 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.135 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.135 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.135 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+11:16:35.136 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+11:16:35.136 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.136 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.137 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.137 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.138 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.138 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.138 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.139 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.139 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.139 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+11:16:35.139 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+11:16:35.139 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.140 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.140 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.141 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.141 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.141 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.142 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.142 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.142 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.143 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.143 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.143 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.144 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.144 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.144 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.145 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+11:16:35.145 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+11:16:35.145 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.145 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.146 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.146 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.146 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.147 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.147 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.147 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.148 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.148 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.148 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.149 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.149 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.149 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.150 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.150 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.150 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.151 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.151 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+11:16:35.151 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+11:16:35.151 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.151 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.152 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.152 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.153 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.153 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.154 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.154 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.155 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:35.155 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:35.155 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:35.156 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.156 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+11:16:35.156 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+11:16:35.156 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.156 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.157 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.157 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+11:16:35.157 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+11:16:35.157 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:35.158 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:35.158 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:35.158 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+11:16:42.281 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:16:42.282 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:42.284 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:16:42.284 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:42.285 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:42.286 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:42.287 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:16:53.274 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:16:53.275 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:53.276 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:16:53.277 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:16:53.277 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:53.279 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:53.279 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:53.280 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:53.283 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:53.285 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:53.286 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:53.287 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:16:53.288 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:16:53.289 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:16:53.289 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:16:53.290 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:16:55.906 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: addNewMenu(String menuName, List<Dish> dishList)
+11:16:55.907 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:55.962 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu added
+11:16:55.963 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: getMenuByName(String name)
+11:16:55.963 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:55.964 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. getDishByMenuId(int menuId)
+11:16:55.965 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:16:55.967 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu is got
+11:16:55.969 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+11:16:55.974 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:56.017 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+11:16:56.018 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database.  Method: addDishToMenu(int menuId, int dishId)
+11:16:56.019 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:16:56.062 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Dish added to table Menu_Dish
+11:16:56.062 [main] INFO  c.g.l.jdbc.MenuDAOImpl - All dishes added to MENU_DISH
+11:17:48.716 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Connecting to database. Method: showAllMenus()
+11:17:48.717 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Successfully connected to DB
+11:17:48.720 [main] INFO  c.g.l.jdbc.MenuDAOImpl - Menu list is printed
+11:18:36.548 [main] INFO  com.gmail.liliyayalovchenko.Main - User left the application
+11:20:24.030 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+11:20:24.165 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+11:20:34.249 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9h32d9591l7qrqi|393671df, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9h32d9591l7qrqi|393671df, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+11:20:34.622 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+11:20:34.628 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.641 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+11:20:34.641 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.656 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.672 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.684 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.685 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.688 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.689 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.691 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.691 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.692 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.693 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.693 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.694 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.695 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.695 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.696 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.697 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.697 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.698 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+11:20:34.698 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+11:20:34.698 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.698 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.699 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.700 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.701 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.701 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.702 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.703 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.704 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.705 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.706 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.706 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.707 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.708 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.708 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.709 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+11:20:34.709 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+11:20:34.709 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.710 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.711 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.711 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+11:20:34.712 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+11:20:34.712 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.712 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.713 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.714 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.714 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.715 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.716 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.716 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.717 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.717 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+11:20:34.718 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+11:20:34.718 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.719 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.720 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.720 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.721 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.722 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.722 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.723 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.723 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.723 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.724 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.724 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.724 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.725 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.726 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.726 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+11:20:34.726 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+11:20:34.726 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.727 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.728 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.728 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.729 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.729 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.730 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.731 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.732 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.732 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.733 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.733 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.734 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.734 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.735 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.735 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.736 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.736 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.736 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+11:20:34.736 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+11:20:34.736 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.737 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.737 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.738 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.738 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.739 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.739 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.739 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.740 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:34.740 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:34.740 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:34.741 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.741 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+11:20:34.741 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+11:20:34.741 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.741 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.742 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.742 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+11:20:34.742 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+11:20:34.742 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:34.743 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:34.743 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:34.744 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+11:20:46.018 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+11:20:46.019 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.021 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+11:20:46.021 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.022 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.023 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.023 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.024 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.025 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.026 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.027 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.028 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.029 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.030 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.031 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.031 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.032 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.033 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.033 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.034 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.034 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.034 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+11:20:46.034 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+11:20:46.035 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.035 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.036 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.036 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.037 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.037 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.038 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.038 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.039 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.039 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.040 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.040 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.041 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.041 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.042 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.042 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+11:20:46.042 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 3
+11:20:46.042 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.043 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.044 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.044 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 3
+11:20:46.045 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+11:20:46.045 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.045 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.046 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.047 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.048 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.048 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.049 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.049 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.050 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.050 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+11:20:46.050 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+11:20:46.050 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.051 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.051 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.052 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.052 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.053 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.053 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.054 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.054 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.054 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.055 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.056 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.056 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.056 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.057 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.057 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+11:20:46.057 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+11:20:46.057 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.058 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.059 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.059 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.059 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.060 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.060 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.061 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.061 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.064 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.065 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.066 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.080 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.086 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.087 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.087 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.090 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.090 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.090 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+11:20:46.090 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+11:20:46.091 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.091 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.091 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.092 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.092 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.093 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.093 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.094 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.094 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:20:46.095 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:20:46.096 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:20:46.096 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.097 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+11:20:46.097 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+11:20:46.097 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.097 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.098 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.098 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+11:20:46.099 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+11:20:46.099 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:20:46.099 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:20:46.100 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:20:46.100 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+11:21:00.044 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getDishByName(String dishName)
+11:21:00.045 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:00.047 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got
+11:21:00.047 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:00.047 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:00.048 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:00.049 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish
+11:21:00.051 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: removeDish(Dish dish)
+11:21:00.051 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:00.051 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: deleteIngredientsOfDish(int id, Ingredient ingredient)
+11:21:00.051 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:00.052 [main] INFO  c.g.l.jdbc.DishDAOImpl - Ingredients are successfully deleted from Table Dish_Ingredient
+11:21:00.053 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully deleted
+11:21:00.098 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is deleted
+11:21:06.212 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+11:21:06.213 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.214 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+11:21:06.214 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:06.214 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.215 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.215 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.216 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.217 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.217 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.218 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.218 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.219 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.222 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.223 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.223 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.224 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.225 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.225 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.226 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.226 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:06.226 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+11:21:06.227 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+11:21:06.227 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:06.227 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.228 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.228 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.229 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.229 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.229 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.230 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.230 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.230 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.231 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.231 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.231 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.232 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.232 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:06.232 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+11:21:06.233 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+11:21:06.233 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:06.233 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.234 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.234 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.235 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.236 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.236 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.236 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.237 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:06.237 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+11:21:06.237 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+11:21:06.237 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:06.238 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.239 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.239 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.239 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.240 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.240 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.240 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.241 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.241 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.241 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.242 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.242 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.242 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.243 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:06.243 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+11:21:06.243 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+11:21:06.243 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:06.243 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.244 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.244 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.244 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.245 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.245 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.246 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.247 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.247 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.247 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.248 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.248 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.249 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.249 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:06.249 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+11:21:06.249 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+11:21:06.249 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:06.249 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.250 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.251 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.251 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.251 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.252 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.252 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:21:06.252 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:21:06.253 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:21:06.253 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:06.253 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+11:21:06.253 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+11:21:06.253 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:06.253 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:06.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+11:21:06.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+11:21:06.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:21:06.254 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:21:06.255 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:21:06.255 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
+11:29:39.198 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+11:29:39.421 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+11:30:49.513 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9h32p5jv158osl2|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9h32p5jv158osl2|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+11:30:49.901 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllDishes()
+11:30:49.906 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:49.922 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 1
+11:30:49.922 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:30:49.946 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:49.961 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.972 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.973 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.975 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.976 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.977 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.977 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.977 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.978 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.979 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.979 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.980 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.981 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.981 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.982 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.982 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:30:49.983 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 1
+11:30:49.983 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 2
+11:30:49.983 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:30:49.983 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:49.984 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.984 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.985 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.986 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.986 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.987 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.987 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.988 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.989 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.989 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.989 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.990 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.991 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:30:49.991 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 2
+11:30:49.991 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 4
+11:30:49.991 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:30:49.992 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:49.993 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.993 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.994 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.995 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.995 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:49.996 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:49.996 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:30:49.997 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 4
+11:30:49.997 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 5
+11:30:49.997 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:30:49.997 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:49.998 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:49.999 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.000 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.000 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.001 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.001 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.002 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.002 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.003 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.004 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.004 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.005 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.005 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:30:50.005 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 5
+11:30:50.006 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 6
+11:30:50.006 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:30:50.006 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:50.007 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.007 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.008 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.008 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.009 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.009 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.010 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.010 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.011 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.012 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.012 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.013 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.013 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.014 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.014 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.015 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:30:50.015 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 6
+11:30:50.016 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 7
+11:30:50.016 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:30:50.016 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:50.017 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.017 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.018 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.019 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.019 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.020 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.021 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Connecting to database. Method: getIngredientById(int id)
+11:30:50.021 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Successfully connected to DB
+11:30:50.021 [main] INFO  c.g.l.jdbc.IngredientDAOImpl - Result set is got
+11:30:50.022 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:30:50.022 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 7
+11:30:50.022 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 8
+11:30:50.023 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:30:50.023 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:50.023 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:30:50.024 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 8
+11:30:50.024 [main] INFO  c.g.l.jdbc.DishDAOImpl - Dish is got id: 10
+11:30:50.024 [main] INFO  c.g.l.jdbc.DishDAOImpl - Connecting to database. Method: getAllIngredientsByDishId(int dishId)
+11:30:50.024 [main] INFO  c.g.l.jdbc.DishDAOImpl - Successfully connected to DB
+11:30:50.025 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully received
+11:30:50.025 [main] INFO  c.g.l.jdbc.DishDAOImpl - All ingredients successfully added to Dish id 10
